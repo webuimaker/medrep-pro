@@ -9,6 +9,21 @@
   <!-- config.yml (in this same /admin folder) tells Decap what content -->
   <!-- types to show and where in the GitHub repo to save them. -->
 
+  <!-- Netlify Identity widget: handles invite/confirm/recovery tokens -->
+  <!-- and shows the password-set modal instead of just loading the site. -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+
   <!-- This one line loads the entire Decap CMS admin UI. -->
   <!-- Decap CMS is the actively-maintained continuation of the project -->
   <!-- formerly known as "Netlify CMS" — same tool, same config format. -->
