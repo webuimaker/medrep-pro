@@ -4,6 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>MedRep Pro — Coastal Healthcare</title>
+<script>
+  (function () {
+    var hash = window.location.hash;
+    if (hash && /(confirmation_token|invite_token|recovery_token|email_change_token)=/.test(hash)) {
+      window.location.replace('/admin/' + hash);
+    }
+  })();
+</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 :root{
