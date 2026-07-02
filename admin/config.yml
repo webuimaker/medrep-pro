@@ -6,7 +6,7 @@
 
 backend:
   name: git-gateway     # lets Netlify Identity handle login + commits to GitHub
-  branch: main          # change if your default branch is called something else
+  branch: master          # change if your default branch is called something else
 
 # Where uploaded images (product photos, doctor photos) get saved in the repo,
 # and the URL path the website will use to load them.
