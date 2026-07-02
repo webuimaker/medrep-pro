@@ -1,0 +1,28 @@
+{
+  "categories": [
+    {
+      "id": "ortho",
+      "title": "Ortho, Protein & Sachet",
+      "color": "#E85D26",
+      "bg": "#FFF3EE",
+      "icon": "🦴",
+      "specialties": ["Orthopaedics", "Physician", "Neurology"]
+    },
+    {
+      "id": "general",
+      "title": "General / Tablets / Capsules",
+      "color": "#1B7FC4",
+      "bg": "#EBF5FF",
+      "icon": "💊",
+      "specialties": ["General Physician", "Gastroenterology", "Paediatrics", "Gynaecology"]
+    },
+    {
+      "id": "eye",
+      "title": "Eye, Ear, Dental & Ointments",
+      "color": "#7B2FBE",
+      "bg": "#F5EEFF",
+      "icon": "👁️",
+      "specialties": ["Ophthalmology", "ENT", "Dentistry", "Dermatology"]
+    }
+  ]
+}

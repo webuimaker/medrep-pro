@@ -1,0 +1,143 @@
+# ══════════════════════════════════════════════════════════════
+# Decap CMS config for MedRep Pro
+# This file controls what you see and can edit at yoursite.com/admin
+# Docs: https://decapcms.org/docs/configuration-options/
+# ══════════════════════════════════════════════════════════════
+
+backend:
+  name: git-gateway     # lets Netlify Identity handle login + commits to GitHub
+  branch: main          # change if your default branch is called something else
+
+# Where uploaded images (product photos, doctor photos) get saved in the repo,
+# and the URL path the website will use to load them.
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+# Optional: shows a "Published"/"Draft" toggle in the CMS UI (nice for review).
+publish_mode: simple
+
+collections:
+
+  # ──────────────────────────────────────────────
+  # 1) DOCTORS — one JSON file holding a list of doctors
+  # ──────────────────────────────────────────────
+  - name: "doctors"
+    label: "👨‍⚕️ Doctors"
+    files:
+      - name: "doctors"
+        label: "Doctor List"
+        file: "content/doctors.json"
+        fields:
+          - label: "Doctors"
+            name: "doctors"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.specialty}}"
+            fields:
+              - { label: "Doctor Name",   name: "name",         widget: "string" }
+              - { label: "Qualification", name: "qualification", widget: "string" }
+              - label: "Specialty"
+                name: "specialty"
+                widget: "select"
+                options:
+                  - "Orthopaedics"
+                  - "Physician"
+                  - "Neurology"
+                  - "General Physician"
+                  - "Gastroenterology"
+                  - "Paediatrics"
+                  - "Gynaecology"
+                  - "Ophthalmology"
+                  - "ENT"
+                  - "Dentistry"
+                  - "Dermatology"
+              - { label: "Hospital",      name: "hospital",     widget: "string" }
+              - { label: "Clinic",        name: "clinic",       widget: "string", required: false }
+              - { label: "City",          name: "city",         widget: "string" }
+              - { label: "State",         name: "state",        widget: "string" }
+              - { label: "Mobile",        name: "mobile",       widget: "string", required: false }
+              - { label: "Email",         name: "email",        widget: "string", required: false }
+              - { label: "Notes",         name: "notes",        widget: "text",   required: false }
+              - label: "Status"
+                name: "status"
+                widget: "select"
+                options: ["Active", "Inactive"]
+                default: "Active"
+              - label: "Catalogue Assigned"
+                name: "catalog"
+                widget: "select"
+                hint: "Which product catalogue this doctor sees in the app"
+                options:
+                  - { label: "Ortho, Protein & Sachet", value: "ortho" }
+                  - { label: "General / Tablets / Capsules", value: "general" }
+                  - { label: "Eye, Ear, Dental & Ointments", value: "eye" }
+
+  # ──────────────────────────────────────────────
+  # 2) PRODUCTS — one JSON file holding a list of products
+  # ──────────────────────────────────────────────
+  - name: "products"
+    label: "💊 Products"
+    files:
+      - name: "products"
+        label: "Product List"
+        file: "content/products.json"
+        fields:
+          - label: "Products"
+            name: "products"
+            widget: "list"
+            summary: "{{fields.name}} ({{fields.category}})"
+            fields:
+              - { label: "Product Name",  name: "name",     widget: "string" }
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options:
+                  - { label: "Ortho, Protein & Sachet", value: "ortho" }
+                  - { label: "General / Tablets / Capsules", value: "general" }
+                  - { label: "Eye, Ear, Dental & Ointments", value: "eye" }
+              - { label: "Composition",   name: "molecule", widget: "string" }
+              - label: "Product Image"
+                name: "image"
+                widget: "image"
+                required: false
+                hint: "Upload the product card / brochure image"
+              - label: "Assigned Doctors"
+                name: "assignedDoctors"
+                widget: "list"
+                required: false
+                hint: "Type doctor names exactly as entered in the Doctors collection"
+                field: { label: "Doctor Name", name: "doctorName", widget: "string" }
+              - label: "Materials Count"
+                name: "materialsCount"
+                widget: "number"
+                default: 0
+                hint: "How many brochure/detail slides exist for this product"
+              - label: "Status"
+                name: "status"
+                widget: "select"
+                options: ["Active", "Inactive"]
+                default: "Active"
+
+  # ──────────────────────────────────────────────
+  # 3) CATALOGUE CATEGORIES — the tabs (Ortho / General / Eye)
+  # ──────────────────────────────────────────────
+  - name: "categories"
+    label: "📋 Catalogue Categories"
+    files:
+      - name: "categories"
+        label: "Categories"
+        file: "content/categories.json"
+        fields:
+          - label: "Categories"
+            name: "categories"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "ID (used internally, no spaces)", name: "id", widget: "string" }
+              - { label: "Title",       name: "title", widget: "string" }
+              - { label: "Accent Color", name: "color", widget: "color", default: "#1B7FC4" }
+              - { label: "Background Color", name: "bg", widget: "color", default: "#EBF5FF" }
+              - { label: "Icon (emoji)", name: "icon", widget: "string", default: "💊" }
+              - label: "Specialties shown under this category"
+                name: "specialties"
+                widget: "list"
+                field: { label: "Specialty", name: "specialty", widget: "string" }

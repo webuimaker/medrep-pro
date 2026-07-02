@@ -1,0 +1,22 @@
+# ══════════════════════════════════════════════════════════════
+# Netlify site configuration for MedRep Pro
+# This is a plain static site (HTML/CSS/JS) — no build step required.
+# ══════════════════════════════════════════════════════════════
+
+[build]
+  publish = "."
+  command = ""
+
+# Keep the JSON content files fresh on every request instead of cached,
+# so edits made in /admin show up on the live site right away.
+[[headers]]
+  for = "/content/*.json"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+# Standard SPA-friendly fallback (harmless here, useful if you later add routes)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false

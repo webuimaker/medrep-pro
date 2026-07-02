@@ -1,0 +1,16 @@
+{
+  "doctors": [
+    { "name": "Dr. Priya Sharma", "qualification": "MD (Orthopaedics)", "specialty": "Orthopaedics", "hospital": "Patna Medical College", "clinic": "", "city": "Patna", "state": "Bihar", "mobile": "", "email": "", "notes": "", "status": "Active", "catalog": "ortho" },
+    { "name": "Dr. Rajesh Kumar", "qualification": "MS (Ortho)", "specialty": "Orthopaedics", "hospital": "PMCH Hospital", "clinic": "", "city": "Patna", "state": "Bihar", "mobile": "", "email": "", "notes": "", "status": "Active", "catalog": "ortho" },
+    { "name": "Dr. Sunita Verma", "qualification": "MBBS, DGO", "specialty": "Gynaecology", "hospital": "Nalanda Clinic", "clinic": "", "city": "Patna", "state": "Bihar", "mobile": "", "email": "", "notes": "", "status": "Active", "catalog": "general" },
+    { "name": "Dr. Anand Mishra", "qualification": "MBBS, MD", "specialty": "General Physician", "hospital": "City Health Centre", "clinic": "", "city": "Patna", "state": "Bihar", "mobile": "", "email": "", "notes": "", "status": "Active", "catalog": "general" },
+    { "name": "Dr. Rekha Sinha", "qualification": "MS (Ophthalmology)", "specialty": "Ophthalmology", "hospital": "Eye Care Hospital", "clinic": "", "city": "Patna", "state": "Bihar", "mobile": "", "email": "", "notes": "", "status": "Active", "catalog": "eye" },
+    { "name": "Dr. Vivek Pandey", "qualification": "MBBS, DLO", "specialty": "ENT", "hospital": "Pandey ENT Clinic", "clinic": "", "city": "Patna", "state": "Bihar", "mobile": "", "email": "", "notes": "", "status": "Active", "catalog": "eye" },
+    { "name": "Dr. Meena Gupta", "qualification": "BDS, MDS", "specialty": "Dentistry", "hospital": "Smile Dental Studio", "clinic": "", "city": "Patna", "state": "Bihar", "mobile": "", "email": "", "notes": "", "status": "Active", "catalog": "eye" },
+    { "name": "Dr. Sanjay Tiwari", "qualification": "MD (General Medicine)", "specialty": "General Physician", "hospital": "Tiwari Medical", "clinic": "", "city": "Patna", "state": "Bihar", "mobile": "", "email": "", "notes": "", "status": "Active", "catalog": "general" },
+    { "name": "Dr. Nisha Agarwal", "qualification": "MD (Paediatrics)", "specialty": "Paediatrics", "hospital": "Children's Clinic", "clinic": "", "city": "Patna", "state": "Bihar", "mobile": "", "email": "", "notes": "", "status": "Active", "catalog": "general" },
+    { "name": "Dr. Manoj Singh", "qualification": "MS (Ortho), D.Orth", "specialty": "Orthopaedics", "hospital": "Singh Ortho Care", "clinic": "", "city": "Patna", "state": "Bihar", "mobile": "", "email": "", "notes": "", "status": "Active", "catalog": "ortho" },
+    { "name": "Dr. Pooja Yadav", "qualification": "MBBS, DGO", "specialty": "Gynaecology", "hospital": "Yadav Women Clinic", "clinic": "", "city": "Patna", "state": "Bihar", "mobile": "", "email": "", "notes": "", "status": "Active", "catalog": "general" },
+    { "name": "Dr. Ramesh Dube", "qualification": "MBBS, MD (Neurology)", "specialty": "Neurology", "hospital": "Neuro Care Centre", "clinic": "", "city": "Patna", "state": "Bihar", "mobile": "", "email": "", "notes": "", "status": "Active", "catalog": "ortho" }
+  ]
+}
