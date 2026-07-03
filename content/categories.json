@@ -6,7 +6,11 @@
       "color": "#E85D26",
       "bg": "#FFF3EE",
       "icon": "🦴",
-      "specialties": ["Orthopaedics", "Physician", "Neurology"]
+      "specialties": [
+        "Orthopaedics",
+        "Physician",
+        "Neurology"
+      ]
     },
     {
       "id": "general",
@@ -14,7 +18,12 @@
       "color": "#1B7FC4",
       "bg": "#EBF5FF",
       "icon": "💊",
-      "specialties": ["General Physician", "Gastroenterology", "Paediatrics", "Gynaecology"]
+      "specialties": [
+        "General Physician",
+        "Gastroenterology",
+        "Paediatrics",
+        "Gynaecology"
+      ]
     },
     {
       "id": "eye",
@@ -22,7 +31,19 @@
       "color": "#7B2FBE",
       "bg": "#F5EEFF",
       "icon": "👁️",
-      "specialties": ["Ophthalmology", "ENT", "Dentistry", "Dermatology"]
+      "specialties": [
+        "Ophthalmology",
+        "ENT",
+        "Dentistry",
+        "Dermatology"
+      ]
+    },
+    {
+      "color": "#03a9f4",
+      "bg": "#6dd0ff",
+      "icon": "👶",
+      "id": "paediatrics",
+      "title": "Paediatrics"
     }
   ]
 }
