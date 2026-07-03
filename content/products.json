@@ -1,6 +1,161 @@
 {
   "products": [
     {
+      "name": "Amlotal-AT",
+      "category": "general",
+      "molecule": "Amlodipine 5mg + Atenolol 50mg Tablets",
+      "image": "images/uploads/amlotal-at.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active"
+    },
+    {
+      "name": "ATROCOS",
+      "category": "general",
+      "molecule": "Atorvastatin 10 mg + Clopidogrel 75 mg Capsules",
+      "image": "images/uploads/atrocos.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active"
+    },
+    {
+      "name": "CALCOS ACTIVE",
+      "category": "ortho",
+      "molecule": "Calcitriol 0.25 mcg + Calcium Carbonate 500 mg + Zinc 7.5 mg + Magnesium 50 mg Tablets",
+      "image": "images/uploads/calcos-active.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active"
+    },
+    {
+    "name": "BILACOS",
+    "category": "general",
+    "molecule": "Calcium Citrate + Vitamin D3 + ...",
+    "image": "images/uploads/bilacos.jpg",
+    "assignedDoctors": [],
+    "materialsCount": 1,
+    "status": "Active"
+    },
+    {
+    "name": "COLACT",
+    "category": "general",
+    "molecule": "Lactulose Concentrate 10gm Syrup",
+    "image": "images/uploads/colact.jpg",
+    "assignedDoctors": [],
+    "materialsCount": 1,
+    "status": "Active"
+    },
+    {
+    "name": "COSRIDE M1/M2",
+    "category": "general",
+    "molecule": "Metformin 500 mg + Glimepiride 1 mg / 2 mg Tablets",
+    "image": "images/uploads/cosride-m1-m2.jpg",
+    "assignedDoctors": [],
+    "materialsCount": 1,
+    "status": "Active"
+    },
+    {
+    "name": "Cotel-THA",
+    "category": "general",
+    "molecule": "Amlodipine 5 mg + Telmisartan 40 mg + Hydrochlorothiazide 12.5 mg Tablets",
+    "image": "images/uploads/cotel-tha.jpg",
+    "assignedDoctors": [],
+    "materialsCount": 1,
+    "status": "Active"
+    },
+    {
+    "name": "DAPZIN-10",
+    "category": "general",
+    "molecule": "Dapagliflozin 10 mg Tablets",
+    "image": "images/uploads/dapzin-10.jpg",
+    "assignedDoctors": [],
+    "materialsCount": 1,
+    "status": "Active"
+    },
+    {
+    "name": "Drocos-MF",
+    "category": "general",
+    "molecule": "Drotaverine Hydrochloride 80 mg + Mefenamic Acid 250 mg Tablets",
+    "image": "images/uploads/drocos-mf.jpg",
+    "assignedDoctors": [],
+    "materialsCount": 1,
+    "status": "Active"
+    },
+    {
+    "name": "Esocos-DSR",
+    "category": "general",
+    "molecule": "Esomeprazole 20 mg + Domperidone 30 mg (SR) Capsules",
+    "image": "images/uploads/esocos-dsr.jpg",
+    "assignedDoctors": [],
+    "materialsCount": 1,
+    "status": "Active"
+    },
+    {
+    "name": "FexCos-M",
+    "category": "general",
+    "molecule": "Fexofenadine 120 mg + Montelukast 10 mg Tablets",
+    "image": "images/uploads/fexcos-m.jpg",
+    "assignedDoctors": [],
+    "materialsCount": 1,
+    "status": "Active"
+    },
+    {
+    "name": "Lactoco-L",
+    "category": "general",
+    "molecule": "Lactic Acid Bacillus 150 Million Spores Sachet",
+    "image": "images/uploads/lactoco-l.jpg",
+    "assignedDoctors": [],
+    "materialsCount": 1,
+    "status": "Active"
+    },
+    {
+    "name": "NeuroGlow-GB",
+    "category": "ortho",
+    "molecule": "Gabapentin 300 mg + Methylcobalamin 500 mcg Tablets",
+    "image": "images/uploads/neuroglow-gb.jpg",
+    "assignedDoctors": [],
+    "materialsCount": 1,
+    "status": "Active"
+    },
+    {
+    "name": "Rifacos 200/400",
+    "category": "general",
+    "molecule": "Rifaximin 200 mg / 400 mg Tablets",
+    "image": "images/uploads/rifacos.jpg",
+    "assignedDoctors": [],
+    "materialsCount": 1,
+    "status": "Active"
+    },
+    {
+    "name": "Rosucos Gold 20",
+    "category": "general",
+    "molecule": "Rosuvastatin 20 mg + Clopidogrel 75 mg + Aspirin 75 mg Capsules",
+    "image": "images/uploads/rosucos-gold.jpg",
+    "assignedDoctors": [],
+    "materialsCount": 1,
+    "status": "Active"
+    },
+    {
+    "name": "Vosco",
+    "category": "general",
+    "molecule": "Voglibose Tablets 0.2 mg / 0.3 mg",
+    "image": "images/uploads/vosco.jpg",
+    "assignedDoctors": [],
+    "materialsCount": 1,
+    "status": "Active"
+    },
+    {
+    "name": "BronCos-LS",
+    "category": "general",
+    "molecule": "Ambroxol 7.5 mg + Levosalbutamol 0.25 mg + Guaiphenesin 12.5 mg Drops",
+    "image": "images/uploads/broncos-ls.jpg",
+    "assignedDoctors": [],
+    "materialsCount": 1,
+    "status": "Active"
+    },
+
+
+    {
       "name": "Calcos 60K D3",
       "category": "ortho",
       "molecule": "Cholecalciferol 60000 IU",
