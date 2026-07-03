@@ -169,14 +169,19 @@
       "specialty": "Neurology"
     },
     {
-      "status": "Active",
-      "name": "Dr. Kumar Gautam",
+      "products": [
+        "Calcos 60K D3",
+        "Etocos-TH",
+        "NeuroGlow GB"
+      ],
       "city": "Gaya",
-      "state": "Bihar",
-      "catalog": "general",
-      "specialty": "General Physician",
+      "name": "Dr. Kumar Gautam",
       "qualification": "MBBS, Physician",
-      "hospital": "GB Road, Gaya"
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "general",
+      "hospital": "GB Road, Gaya",
+      "specialty": "General Physician"
     }
   ]
 }
