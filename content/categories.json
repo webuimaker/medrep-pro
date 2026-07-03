@@ -43,7 +43,10 @@
       "bg": "#6dd0ff",
       "icon": "👶",
       "id": "paediatrics",
-      "title": "Paediatrics"
+      "title": "Paediatrics",
+      "specialties": [
+        "Child"
+      ]
     }
   ]
 }
