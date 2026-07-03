@@ -389,6 +389,7 @@ function renderDoctors(docs) {
 }
 
 // ═══ DOCTOR DETAIL ═══
+/* OLD CODE Backup as per the categories product 
 function openDoctorDetail(docId) {
   currentDoctor = DOCTORS.find(d => d.id === docId);
   const d = currentDoctor;
@@ -415,6 +416,63 @@ function openDoctorDetail(docId) {
     const color = META[d.catalog].color;
     const thumb = getThumbSrc(d.catalog, i);
     return `<div class="product-card" onclick="openLightbox('${d.catalog}',${i},'${p.name}','${d.name}')">
+      <img class="product-thumb" src="${thumb}" alt="${p.name}" loading="lazy">
+      <div class="product-info">
+        <div class="product-name">${p.name}  </div>
+        <div class="product-molecule">${p.molecule}</div>
+        <button class="present-btn" style="background:${color}">▶ Present</button>
+      </div>
+    </div>`;
+  }).join('');
+
+  showScreen('detail');
+} */
+
+// ═══ DOCTOR DETAIL ═══
+function openDoctorDetail(docId) {
+  currentDoctor = DOCTORS.find(d => d.id === docId);
+  const d = currentDoctor;
+  const cat = META[d.catalog]; // still used for the badge icon/color
+  const sc = SPEC_COLORS[d.spec] || {color:'#1B3A6B',bg:'#EBF5FF'};
+
+  document.getElementById('detail-header').innerHTML = `
+    <div class="detail-avatar">${d.initials}</div>
+    <div class="detail-info">
+      <h2>${d.name}</h2>
+      <p>${d.deg} • ${d.hospital}</p>
+      <div class="detail-spec-badge">${cat.icon} ${d.spec}</div>
+    </div>`;
+
+  document.getElementById('products-title').textContent = `Products for ${d.spec}`;
+
+  // ── Build a flat lookup of every product across all categories,
+  // keeping track of which category + index each one lives at
+  // (needed for getThumbSrc/openLightbox, which are category-indexed).
+  const allProductsFlat = [];
+  Object.values(META).forEach(c => {
+    c.products.forEach((p, i) => {
+      allProductsFlat.push({ ...p, categoryId: c.id, categoryIndex: i, categoryColor: c.color });
+    });
+  });
+
+  // ── Pick only the products explicitly assigned to this doctor,
+  // in the order they were selected in the CMS.
+  const assignedNames = d.products || [];
+  const products = assignedNames
+    .map(name => allProductsFlat.find(p => p.name === name))
+    .filter(Boolean); // drops any name that no longer matches a product (renamed/deleted)
+
+  document.getElementById('products-count').textContent = products.length + ' products matched';
+
+  const totalProductCount = allProductsFlat.length;
+  const otherCount = totalProductCount - products.length;
+  document.getElementById('lock-msg').textContent = `🔒 ${otherCount} other products hidden`;
+
+  const grid = document.getElementById('product-grid');
+  grid.innerHTML = products.map(p => {
+    const color = p.categoryColor;
+    const thumb = getThumbSrc(p.categoryId, p.categoryIndex);
+    return `<div class="product-card" onclick="openLightbox('${p.categoryId}',${p.categoryIndex},'${p.name}','${d.name}')">
       <img class="product-thumb" src="${thumb}" alt="${p.name}" loading="lazy">
       <div class="product-info">
         <div class="product-name">${p.name}  </div>
