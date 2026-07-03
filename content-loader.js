@@ -39,6 +39,7 @@ async function loadContent() {
       mobile: d.mobile || '',
       email: d.email || '',
       notes: d.notes || '',
+      products: d.products || [],
     }));
 
   // ── SPEC_COLORS ──────────────────────────────────────────

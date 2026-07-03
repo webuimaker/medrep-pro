@@ -298,16 +298,12 @@ let currentDoctor = null;
 let lbSlides = [];
 let lbCurrentIdx = 0;
 let lbProductName = '';
+let lbCatalogKey = '';
 let lbDoctorName = '';
 let touchStartX = 0;
 let touchStartY = 0;
 let currentCatalogKey = 'ortho';
 let activeCatFilter = 'all';
-// Whatever product array is currently on screen (Doctor Detail's filtered
-// list, or Catalogue's full category list). The lightbox always reads
-// from this instead of re-deriving a list from META, so slide counts
-// never drift from what's actually shown in the grid.
-let currentProductList = [];
 
 // ═══ INIT ═══
 async function init() {
@@ -472,12 +468,11 @@ function openDoctorDetail(docId) {
   const otherCount = totalProductCount - products.length;
   document.getElementById('lock-msg').textContent = `🔒 ${otherCount} other products hidden`;
 
-  currentProductList = products; // make the filtered list available to openLightbox() via onclick
   const grid = document.getElementById('product-grid');
-  grid.innerHTML = products.map((p,i) => {
+  grid.innerHTML = products.map(p => {
     const color = p.categoryColor;
     const thumb = getThumbSrc(p.categoryId, p.categoryIndex);
-    return `<div class="product-card" onclick="openLightbox(currentProductList,${i},'${d.name}')">
+    return `<div class="product-card" onclick="openLightbox('${p.categoryId}',${p.categoryIndex},'${p.name}','${d.name}')">
       <img class="product-thumb" src="${thumb}" alt="${p.name}" loading="lazy">
       <div class="product-info">
         <div class="product-name">${p.name}  </div>
@@ -491,28 +486,27 @@ function openDoctorDetail(docId) {
 }
 
 // ═══ LIGHTBOX ═══
-// openLightbox no longer takes a catalogKey — it just takes whatever
-// product array is currently on screen (productList) plus the index
-// within that array. This way it always matches what the grid showed,
-// whether that's a doctor's filtered products or a full category list.
 
-function openLightbox(productList, idx, doctorName) {
-  currentProductList = productList;
-  lbSlides = currentProductList.map(p => p.image);
-  lbCurrentIdx = idx;
-  lbProductName = currentProductList[idx].name;
+function openLightbox(catalogKey, productIdx, productName, doctorName) {
+  // lbSlides is just each product's own image, in catalogue order — no
+  // cover/closing slides mixed in, so counts always match the catalogue.
+  lbSlides = META[catalogKey].products.map(p => p.image);
+  // The product index IS the slide index (1:1 mapping).
+  lbCurrentIdx = productIdx;
+  lbProductName = productName;
+  lbCatalogKey = catalogKey;
   lbDoctorName = doctorName;
 
-  document.getElementById('lb-product-name').textContent = lbProductName;
+  document.getElementById('lb-product-name').textContent = productName;
   document.getElementById('lb-doctor-name').textContent = 'Presenting to ' + doctorName;
 
-  buildThumbStrip();
+  buildThumbStrip(catalogKey);
   updateLightboxSlide();
   document.getElementById('lightbox').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
 
-function buildThumbStrip() {
+function buildThumbStrip(catalogKey) {
   // Thumbnails mirror lbSlides exactly — product images only.
   const thumbs = document.getElementById('lb-thumbs');
   thumbs.innerHTML = lbSlides.map((src,i) =>
@@ -526,9 +520,9 @@ function updateLightboxSlide() {
   const total = lbSlides.length;
   document.getElementById('lb-counter').textContent = (lbCurrentIdx+1) + ' / ' + total;
 
-  // lbCurrentIdx is a direct index into currentProductList, so the header
-  // always names the actual product being shown.
-  lbProductName = currentProductList[lbCurrentIdx].name;
+  // lbCurrentIdx is a direct index into META[catalogKey].products, so the
+  // header always names an actual product — never a cover/closing slide.
+  lbProductName = META[lbCatalogKey].products[lbCurrentIdx].name;
   document.getElementById('lb-product-name').textContent = lbProductName;
   document.getElementById('lb-doctor-name').textContent = 'Presenting to ' + lbDoctorName;
   document.getElementById('lb-progress-bar').style.width = ((lbCurrentIdx+1)/total*100) + '%';
@@ -640,7 +634,6 @@ function renderCatalog(key) {
   // from the underlying slide deck length), so it can't drift from the
   // count shown once a product is opened in the lightbox.
   document.getElementById('catalog-count').textContent = 'Showing : ' + products.length + ' Products';
-  currentProductList = products; // make this category's list available to openLightbox() via onclick
 
   // For each product, find doctors who are linked to this catalog
   const grid = document.getElementById('catalog-grid');
@@ -651,7 +644,7 @@ function renderCatalog(key) {
       `<div class="mini-avatar" title="${d.name}">${d.initials}</div>`
     ).join('');
     const extraCount = DOCTORS.filter(d => d.catalog === key).length - 3;
-    return `<div class="cat-product-card" onclick="openCatProduct('${key}',${i})">
+    return `<div class="cat-product-card" onclick="openCatProduct('${key}',${i},'${p.name}')">
       <img class="thumb" src="${thumb}" alt="${p.name}" loading="lazy">
       <div class="info">
         <div class="pname">${p.name}</div>
@@ -666,13 +659,11 @@ function renderCatalog(key) {
   }).join('');
 }
 
-function openCatProduct(catalogKey, productIdx) {
-  // Open lightbox directly from catalog with first doctor of that type.
-  // currentProductList was already set to this category's products by
-  // renderCatalog(), so we just pass it straight through.
+function openCatProduct(catalogKey, productIdx, productName) {
+  // Open lightbox directly from catalog with first doctor of that type
   const doc = DOCTORS.find(d => d.catalog === catalogKey);
   const docName = doc ? doc.name : 'Doctor';
-  openLightbox(currentProductList, productIdx, docName);
+  openLightbox(catalogKey, productIdx, productName, docName);
 }
 
 // ═══ START ═══
