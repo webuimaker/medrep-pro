@@ -2,7 +2,7 @@
   "categories": [
     {
       "id": "ortho",
-      "title": "Ortho, Protein & Sachet",
+      "title": "Ortho",
       "color": "#E85D26",
       "bg": "#FFF3EE",
       "icon": "🦴",
@@ -14,7 +14,7 @@
     },
     {
       "id": "general",
-      "title": "General / Tablets / Capsules",
+      "title": "Physician / GP",
       "color": "#1B7FC4",
       "bg": "#EBF5FF",
       "icon": "💊",
@@ -27,7 +27,7 @@
     },
     {
       "id": "eye",
-      "title": "Eye, Ear, Dental & Ointments",
+      "title": "ENT",
       "color": "#7B2FBE",
       "bg": "#F5EEFF",
       "icon": "👁️",

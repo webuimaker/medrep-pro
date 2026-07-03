@@ -516,13 +516,32 @@ document.addEventListener('keydown', e => {
 });
 
 // ═══ CATALOGUE SCREEN ═══
+// function buildCatTabs() {
+//   const tabs = document.getElementById('cat-tabs');
+//   const cats = [
+//     {key:'ortho',  label:'Ortho', icon:'🦴'},
+//     {key:'general',label:'General', icon:'💊'},
+//     {key:'eye',    label:'Eye / Ear', icon:'👁️'},
+//   ];
+//   tabs.innerHTML = cats.map(c => {
+//     const m = META[c.key];
+//     return `<button class="cat-btn ${c.key===currentCatalogKey?'active':''}" 
+//       id="catbtn-${c.key}"
+//       style="${c.key===currentCatalogKey ? `background:${m.color};border-color:${m.color}` : ''}"
+//       onclick="renderCatalog('${c.key}')">
+//       <span class="cat-icon">${c.icon}</span>
+//       <span class="cat-label">${c.label}</span>
+//     </button>`;
+//   }).join('');
+// }
+
 function buildCatTabs() {
   const tabs = document.getElementById('cat-tabs');
-  const cats = [
-    {key:'ortho',  label:'Ortho', icon:'🦴'},
-    {key:'general',label:'General', icon:'💊'},
-    {key:'eye',    label:'Eye / Ear', icon:'👁️'},
-  ];
+  const cats = Object.values(META).map(m => ({
+    key: m.id,
+    label: m.title,
+    icon: m.icon,
+  }));
   tabs.innerHTML = cats.map(c => {
     const m = META[c.key];
     return `<button class="cat-btn ${c.key===currentCatalogKey?'active':''}" 
