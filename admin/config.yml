@@ -64,12 +64,24 @@ collections:
                 default: "Active"
               - label: "Catalogue Assigned"
                 name: "catalog"
-                widget: "select"
-                hint: "Which product catalogue this doctor sees in the app"
-                options:
-                  - { label: "Ortho, Protein & Sachet", value: "ortho" }
-                  - { label: "General / Tablets / Capsules", value: "general" }
-                  - { label: "Eye, Ear, Dental & Ointments", value: "eye" }
+                widget: "relation"
+                collection: "categories"
+                file: "categories"
+                search_fields: ["categories.*.title"]
+                display_fields: ["categories.*.title"]
+                value_field: "categories.*.id"
+                hint: "Which category tab this doctor's badge/tag reflects"
+              - label: "Assigned Products"
+                name: "products"
+                widget: "relation"
+                collection: "products"
+                file: "products"
+                search_fields: ["products.*.name"]
+                display_fields: ["products.*.name"]
+                value_field: "products.*.name"
+                multiple: true
+                required: false
+                hint: "Tick every product this doctor should see when their profile is opened"
 
   # ──────────────────────────────────────────────
   # 2) PRODUCTS — one JSON file holding a list of products
@@ -89,11 +101,12 @@ collections:
               - { label: "Product Name",  name: "name",     widget: "string" }
               - label: "Category"
                 name: "category"
-                widget: "select"
-                options:
-                  - { label: "Ortho, Protein & Sachet", value: "ortho" }
-                  - { label: "General / Tablets / Capsules", value: "general" }
-                  - { label: "Eye, Ear, Dental & Ointments", value: "eye" }
+                widget: "relation"
+                collection: "categories"
+                file: "categories"
+                search_fields: ["categories.*.title"]
+                display_fields: ["categories.*.title"]
+                value_field: "categories.*.id"
               - { label: "Composition",   name: "molecule", widget: "string" }
               - label: "Product Image"
                 name: "image"
