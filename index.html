@@ -254,7 +254,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
   </div>
   <div id="lb-image-area">
     <button class="lb-arrow" id="lb-prev" onclick="lbNav(-1)">‹</button>
-    <img id="lb-img" src="" alt="Product slide">
+    <img id="lb-img" src="" alt="Product slide" decoding="async">
     <button class="lb-arrow" id="lb-next" onclick="lbNav(1)">›</button>
   </div>
   <div id="lb-bottom">
@@ -288,14 +288,34 @@ const SPEC_COLORS = {
   "Physician":       {color:"#1B7FC4", bg:"#EBF5FF"},
 };
 
+// ═══ IMAGE OPTIMIZATION ═══
+// Routes every image through Netlify's built-in Image CDN, which resizes,
+// compresses, and auto-converts to WebP/AVIF (based on the visitor's
+// browser) on the fly, then caches the result at Netlify's edge. This
+// means we can keep one decent-quality source image per product and let
+// Netlify generate the right size for every place it's used, instead of
+// ever sending a full-size image where a small thumbnail is needed.
+function imgUrl(rawPath, w, q) {
+  const clean = rawPath.startsWith('/') ? rawPath : '/' + rawPath;
+  return `/.netlify/images?url=${encodeURIComponent(clean)}&w=${w}&q=${q || 75}`;
+}
+const THUMB_W = 480;       // grid card thumbnails (Doctor Detail + Catalogue)
+const THUMB_Q = 70;
+const FULL_W = 1400;       // lightbox main slide
+const FULL_Q = 78;
+const FILMSTRIP_W = 160;   // lightbox bottom thumbnail strip
+const FILMSTRIP_Q = 60;
+
 // Cover thumb for each product is just its own image now (no slide-deck indexing)
 function getThumbSrc(catalogKey, productIdx) {
-  return META[catalogKey].products[productIdx].image;
+  const raw = META[catalogKey].products[productIdx].image;
+  return imgUrl(raw, THUMB_W, THUMB_Q);
 }
 
 // ═══ STATE ═══
 let currentDoctor = null;
-let lbSlides = [];
+let lbSlides = [];       // optimized full-size URLs actually shown in the lightbox
+let lbRawSlides = [];    // original repo paths, used to build filmstrip thumbs + preloads
 let lbCurrentIdx = 0;
 let lbProductName = '';
 let lbDoctorName = '';
@@ -478,7 +498,7 @@ function openDoctorDetail(docId) {
     const color = p.categoryColor;
     const thumb = getThumbSrc(p.categoryId, p.categoryIndex);
     return `<div class="product-card" onclick="openLightbox(currentProductList,${i},'${d.name}')">
-      <img class="product-thumb" src="${thumb}" alt="${p.name}" loading="lazy">
+      <img class="product-thumb" src="${thumb}" alt="${p.name}" loading="lazy" decoding="async">
       <div class="product-info">
         <div class="product-name">${p.name}  </div>
         <div class="product-molecule">${p.molecule}</div>
@@ -498,7 +518,8 @@ function openDoctorDetail(docId) {
 
 function openLightbox(productList, idx, doctorName) {
   currentProductList = productList;
-  lbSlides = currentProductList.map(p => p.image);
+  lbRawSlides = currentProductList.map(p => p.image);
+  lbSlides = lbRawSlides.map(src => imgUrl(src, FULL_W, FULL_Q));
   lbCurrentIdx = idx;
   lbProductName = currentProductList[idx].name;
   lbDoctorName = doctorName;
@@ -513,15 +534,18 @@ function openLightbox(productList, idx, doctorName) {
 }
 
 function buildThumbStrip() {
-  // Thumbnails mirror lbSlides exactly — product images only.
+  // Filmstrip thumbnails are a separate, much smaller transform than the
+  // main slide — no reason to load a 1400px image just to show a 56px tall
+  // thumbnail strip.
   const thumbs = document.getElementById('lb-thumbs');
-  thumbs.innerHTML = lbSlides.map((src,i) =>
-    `<img class="lb-thumb ${i===lbCurrentIdx?'active':''}" src="${src}" onclick="lbJump(${i})" data-idx="${i}">`
+  thumbs.innerHTML = lbRawSlides.map((src,i) =>
+    `<img class="lb-thumb ${i===lbCurrentIdx?'active':''}" src="${imgUrl(src, FILMSTRIP_W, FILMSTRIP_Q)}" loading="lazy" decoding="async" onclick="lbJump(${i})" data-idx="${i}">`
   ).join('');
 }
 
 function updateLightboxSlide() {
   const img = document.getElementById('lb-img');
+  img.decoding = 'async';
   img.src = lbSlides[lbCurrentIdx];
   const total = lbSlides.length;
   document.getElementById('lb-counter').textContent = (lbCurrentIdx+1) + ' / ' + total;
@@ -541,6 +565,21 @@ function updateLightboxSlide() {
   // Scroll active thumb into view
   const activeThumb = document.querySelector('.lb-thumb.active');
   if(activeThumb) activeThumb.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+
+  preloadAdjacentSlides();
+}
+
+// Fetches the next and previous slide's optimized image into the browser
+// (and service-worker) cache ahead of time, so tapping next/prev feels
+// instant instead of waiting on a fresh network request every time.
+function preloadAdjacentSlides() {
+  [lbCurrentIdx - 1, lbCurrentIdx + 1].forEach(i => {
+    if (i >= 0 && i < lbSlides.length) {
+      const preloadImg = new Image();
+      preloadImg.decoding = 'async';
+      preloadImg.src = lbSlides[i];
+    }
+  });
 }
 
 function lbNav(dir) {
@@ -652,7 +691,7 @@ function renderCatalog(key) {
     ).join('');
     const extraCount = DOCTORS.filter(d => d.catalog === key).length - 3;
     return `<div class="cat-product-card" onclick="openCatProduct('${key}',${i})">
-      <img class="thumb" src="${thumb}" alt="${p.name}" loading="lazy">
+      <img class="thumb" src="${thumb}" alt="${p.name}" loading="lazy" decoding="async">
       <div class="info">
         <div class="pname">${p.name}</div>
         <div class="pmol">${p.molecule}</div>
@@ -677,6 +716,16 @@ function openCatProduct(catalogKey, productIdx) {
 
 // ═══ START ═══
 init();
+
+// ═══ OFFLINE / SLOW-NETWORK SUPPORT ═══
+// Caches images and app files so repeat visits (and low/no signal in the
+// field) still load instantly. Never touches /admin — the CMS needs a
+// live connection to work.
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch(() => {});
+  });
+}
 </script>
 </body>
 </html>
