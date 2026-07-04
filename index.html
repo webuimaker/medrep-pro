@@ -76,11 +76,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .products-section .subtitle{font-size:12px;color:var(--muted);margin-bottom:16px;display:flex;align-items:center;gap:6px}
 .products-section .subtitle .lock{background:#FFF3CD;color:#856404;border-radius:6px;padding:2px 8px;font-size:11px;font-weight:500}
 .product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
-.product-card{background:#fff;border-radius:12px;overflow:hidden;cursor:pointer;transition:all .2s;box-shadow:0 2px 8px rgba(0,0,0,0.06);border:1.5px solid transparent}
+.product-card{background:#fff;border-radius:12px;overflow:hidden;cursor:pointer;transition:all .2s;box-shadow:0 2px 8px rgba(0,0,0,0.06);border:1.5px solid transparent; display: flex; flex-direction: column;}
 .product-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
 .product-card:active{transform:scale(0.97)}
 .product-thumb{width:100%;height:110px;object-fit:cover;display:block;background:#f0f0f0}
-.product-info{padding:12px}
+.product-info{padding:12px; display: flex; flex-direction: column; justify-content: space-around; height: 100%;}
 .product-name{font-size:13px;font-weight:700;color:var(--text);margin-bottom:3px}
 .product-molecule{font-size:11px;color:var(--muted);margin-bottom:8px;line-height:1.4}
 .present-btn{width:100%;padding:7px;border-radius:7px;border:none;font-size:11px;font-weight:600;cursor:pointer;color:#fff;transition:background .15s}

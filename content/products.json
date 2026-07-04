@@ -153,6 +153,127 @@
     "materialsCount": 1,
     "status": "Active"
     },
+    {
+      "name": "Calcos-60K",
+      "category": "ortho",
+      "molecule": "Cholecalciferol 60000 IU Oral Solution",
+      "image": "images/uploads/calcos-60k.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active"
+    },
+    {
+      "name": "Calcos 60K D3",
+      "category": "ortho",
+      "molecule": "Cholecalciferol 60000 IU",
+      "image": "images/uploads/calcos-60k-d3.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active"
+    },
+    {
+      "name": "Calcos-C",
+      "category": "ortho",
+      "molecule": "Calcium Citrate Malate 500 mg + Calcitriol 0.25 mcg + Zinc 7.5 mg Softgel Capsules",
+      "image": "images/uploads/calcos-c.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active"
+    },
+    {
+      "name": "Calcos-GOLD",
+      "category": "ortho",
+      "molecule": "Calcium Citrate Malate 500 mg + Calcitriol 0.25 mcg + Vitamin K2-7 45 mcg + Omega-3 Fatty Acid 150 mg + Cyanocobalamin 750 mcg + Folic Acid 400 mcg + Boron 1.5 mg Soft Gelatin Capsules",
+      "image": "images/uploads/calcos-gold.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active"
+    },
+    {
+      "name": "Cefucos 250/500",
+      "category": "ortho",
+      "molecule": "Cefuroxime Axetil Tablets 250 mg / 500 mg",
+      "image": "images/uploads/cefucos-250-500.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active"
+    },
+    {
+      "name": "CoCef CV",
+      "category": "ortho",
+      "molecule": "Cefixime 200 mg + Clavulanic Acid 125 mg Tablets / Cefixime 50 mg + Clavulanic Acid 31.25 mg Dry Syrup",
+      "image": "images/uploads/cocef-cv.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active"
+    },
+    {
+      "name": "Coseve 500/1000",
+      "category": "ortho",
+      "molecule": "Evening Primrose Oil Softgel Capsules 500 mg / 1000 mg",
+      "image": "images/uploads/coseve-500-1000.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active"
+    },
+    {
+      "name": "Defcos",
+      "category": "ortho",
+      "molecule": "Deflazacort 6 mg Tablets / Oral Suspension",
+      "image": "images/uploads/defcos.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active"
+    },
+    {
+      "name": "Extranac",
+      "category": "ortho",
+      "molecule": "Thiocolchicoside 4 mg + Aceclofenac 100 mg Tablets",
+      "image": "images/uploads/extranac-th.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active"
+    },
+    {
+      "name": "Linzotal 100/600",
+      "category": "ortho",
+      "molecule": "Linezolid 100 mg Syrup / Linezolid 600 mg Tablets",
+      "image": "images/uploads/linzotal-100-600.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active"
+    },
+    {
+      "name": "LORI-P",
+      "category": "ortho",
+      "molecule": "Lornoxicam 8 mg + Paracetamol 325 mg Tablets",
+      "image": "images/uploads/lori-p.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active"
+    },
+    {
+      "name": "Rabital DSR",
+      "category": "ortho",
+      "molecule": "Rabeprazole 20 mg + Domperidone 30 mg SR Capsules",
+      "image": "images/uploads/rabital-dsr.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active"
+    },
+    {
+      "name": "Rabital-L",
+      "category": [
+        "ortho"
+      ],
+      "molecule": "Rabeprazole 20 mg + Levosulpiride (SR) 75 mg Capsules",
+      "image": "images/uploads/rabital-l.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active"
+    },
+
+
 
 
     {
