@@ -1,5 +1,21 @@
 {
   "doctors": [
+    
+    {
+      "products": [
+        "CALCOS ACTIVE",
+        "COLACT",
+        "Esocos-DSR"
+      ],
+      "city": "Gaya",
+      "name": "Dr. Vimlendu Vimal",
+      "qualification": "Orthopedic & Trauma Center",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "general",
+      "hospital": "Church Rd, Gaya",
+      "specialty": "Ortho"
+    },
     {
       "notes": "",
       "mobile": "",
