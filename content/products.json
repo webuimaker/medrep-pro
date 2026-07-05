@@ -707,6 +707,16 @@
       ],
       "molecule": "Amoxycillin + Clavulanic Acid Injections/Tablets/Dry Syrup with Lactic Acid Bacillus",
       "image": "/images/uploads/cosclav.jpg"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "image": "/images/uploads/oflocos-ms.jpg",
+      "name": "Oflocos-MS",
+      "categories": [
+        "paediatrics"
+      ],
+      "molecule": "Ofloxacin 50 mg + Metronidazole 120 mg + Simethicone 10 mg Syrup"
     }
   ]
 }
