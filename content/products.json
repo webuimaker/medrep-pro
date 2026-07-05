@@ -728,6 +728,16 @@
       ],
       "molecule": "Silymarin 35 mg + Niacinamide 20 mg + Vitamin B12 1 mcg + Vitamin B6 1.5 mg Suspension",
       "image": "/images/uploads/cosliv-syp.jpg"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "CYPROCOS",
+      "categories": [
+        "paediatrics"
+      ],
+      "molecule": "Cyproheptadine HCl 2 mg + Tricholine Citrate (65%) 275 mg + Sorbitol Solution (70%) 200 mg Syrup",
+      "image": "/images/uploads/cyrocos.jpg"
     }
   ]
 }
