@@ -757,6 +757,17 @@
       ],
       "molecule": "Trypsin 48 mg + Bromelain 90 mg + Rutoside Trihydrate 100 mg + Diclofenac Sodium 50 mg Tablets",
       "image": "/images/uploads/tripcos-d.jpg"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "Bestocid-O",
+      "categories": [
+        "ortho",
+        "general"
+      ],
+      "molecule": "Magaldrate 400 mg + Simethicone 20 mg + Oxetacaine 10 mg Syrup",
+      "image": "/images/uploads/bestocid-o-1.jpg"
     }
   ]
 }
