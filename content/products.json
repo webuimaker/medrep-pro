@@ -728,7 +728,8 @@
       "status": "Active",
       "name": "Lycocos Plus",
       "categories": [
-        "paediatrics"
+        "paediatrics",
+        "general"
       ],
       "molecule": "Lycopene + Pomegranate + Grape Seed Extract + Lutein + Beta Carotene + Multivitamins Softgel Capsules",
       "image": "/images/uploads/lycocos-plus.jpg"
