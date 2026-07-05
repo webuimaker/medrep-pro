@@ -788,6 +788,16 @@
       ],
       "molecule": "Ursodeoxycholic Acid Tablets 300 mg",
       "image": "/images/uploads/ursocos.jpg"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "Cos4G",
+      "categories": [
+        "general"
+      ],
+      "molecule": "Omega-3 Fatty Acid, Green Tea Extract, Ginkgo Biloba, Ginseng, Grape Seed Extract, Antioxidants, Vitamins, Minerals & Trace Elements Soft Gel Capsules",
+      "image": "/images/uploads/cos-4g.jpg"
     }
   ]
 }
