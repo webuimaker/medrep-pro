@@ -778,6 +778,16 @@
       ],
       "molecule": "Silymarin 70mg, L-Ornithine L-Aspartate 250mg, Folic Acid 1mg, Niacinamide 45mg, D-Calcium Pantothenate 10mg Capsules",
       "image": "/images/uploads/cosliv-cap.jpg"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "Ursocos 300",
+      "categories": [
+        "general"
+      ],
+      "molecule": "Ursodeoxycholic Acid Tablets 300 mg",
+      "image": "/images/uploads/ursocos.jpg"
     }
   ]
 }
