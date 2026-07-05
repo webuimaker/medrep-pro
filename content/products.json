@@ -566,14 +566,15 @@
       ]
     },
     {
-      "name": "Prmns",
-      "molecule": "Primaquine + Chloroquine",
+      "name": "P-COLD",
+      "molecule": "Paracetamol 125 mg + Phenylephrine 5 mg + Chlorpheniramine Maleate (CPM) 1 mg + Sodium Citrate 60 mg + Menthol 1 mg Syrup",
       "image": "images/uploads/general-prmns.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
       "status": "Active",
       "categories": [
-        "general"
+        "general",
+        "paediatrics"
       ]
     },
     {
