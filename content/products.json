@@ -142,7 +142,8 @@
       "materialsCount": 1,
       "status": "Active",
       "categories": [
-        "ortho"
+        "ortho",
+        "general"
       ]
     },
     {
@@ -357,7 +358,8 @@
       "materialsCount": 1,
       "status": "Active",
       "categories": [
-        "ortho"
+        "ortho",
+        "general"
       ]
     },
     {
@@ -746,7 +748,8 @@
       "status": "Active",
       "name": "Neurogrow Plus",
       "categories": [
-        "ortho"
+        "ortho",
+        "general"
       ],
       "molecule": "Methylcobalamin 1000 mcg + Pyridoxine Hydrochloride 100 mg + Niacinamide 100 mg Injection",
       "image": "/images/uploads/neuroglow-plus.jpg"
@@ -801,6 +804,16 @@
       ],
       "molecule": "Omega-3 Fatty Acid, Green Tea Extract, Ginkgo Biloba, Ginseng, Grape Seed Extract, Antioxidants, Vitamins, Minerals & Trace Elements Soft Gel Capsules",
       "image": "/images/uploads/cos-4g.jpg"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "COCEF-AZ-LB",
+      "categories": [
+        "general"
+      ],
+      "molecule": "Cefixime 100mg Dispersible Tablets, Cefixime 200mg Tablets, Cefixime 200mg + Lactic Acid Bacillus Tablets, Cefixime 50mg + Lactic Acid Bacillus Dry Syrup",
+      "image": "/images/uploads/cocef.jpg"
     }
   ]
 }
