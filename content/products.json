@@ -268,18 +268,6 @@
       ]
     },
     {
-      "name": "Defcos",
-      "molecule": "Deflazacort 6 mg Tablets / Oral Suspension",
-      "image": "images/uploads/defcos.jpg",
-      "assignedDoctors": [],
-      "materialsCount": 1,
-      "status": "Active",
-      "categories": [
-        "ortho",
-        "paediatrics"
-      ]
-    },
-    {
       "name": "Extranac",
       "molecule": "Thiocolchicoside 4 mg + Aceclofenac 100 mg Tablets",
       "image": "images/uploads/extranac-th.jpg",
