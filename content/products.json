@@ -768,6 +768,16 @@
       ],
       "molecule": "Magaldrate 400 mg + Simethicone 20 mg + Oxetacaine 10 mg Syrup",
       "image": "/images/uploads/bestocid-o-1.jpg"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "Cosliv Capsules",
+      "categories": [
+        "general"
+      ],
+      "molecule": "Silymarin 70mg, L-Ornithine L-Aspartate 250mg, Folic Acid 1mg, Niacinamide 45mg, D-Calcium Pantothenate 10mg Capsules",
+      "image": "/images/uploads/cosliv-cap.jpg"
     }
   ]
 }
