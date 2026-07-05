@@ -747,6 +747,16 @@
       ],
       "molecule": "Methylcobalamin 1000 mcg + Pyridoxine Hydrochloride 100 mg + Niacinamide 100 mg Injection",
       "image": "/images/uploads/neuroglow-plus.jpg"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "Tripcos-D",
+      "categories": [
+        "ortho"
+      ],
+      "molecule": "Trypsin 48 mg + Bromelain 90 mg + Rutoside Trihydrate 100 mg + Diclofenac Sodium 50 mg Tablets",
+      "image": "/images/uploads/tripcos-d.jpg"
     }
   ]
 }
