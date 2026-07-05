@@ -509,14 +509,15 @@
       ]
     },
     {
-      "name": "Mefcos F",
+      "name": "Mefcos",
       "molecule": "Mefenamic Acid + Paracetamol Forte",
-      "image": "images/uploads/general-mefcos-f.jpg",
+      "image": "/images/uploads/general-methis.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
       "status": "Active",
       "categories": [
-        "general"
+        "general",
+        "paediatrics"
       ]
     },
     {
