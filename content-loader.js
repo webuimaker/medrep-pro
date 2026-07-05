@@ -8,10 +8,11 @@
 // ══════════════════════════════════════════════════════════════
 
 async function loadContent() {
-  const [doctorsData, productsData, categoriesData] = await Promise.all([
+  const [doctorsData, productsData, categoriesData, settingsData] = await Promise.all([
     fetch('content/doctors.json').then(r => r.json()),
     fetch('content/products.json').then(r => r.json()),
     fetch('content/categories.json').then(r => r.json()),
+    fetch('content/settings.json').then(r => r.json()).catch(() => ({})),
   ]);
 
   // ── DOCTORS ──────────────────────────────────────────────
@@ -77,15 +78,30 @@ async function loadContent() {
   productsData.products
     .filter(p => p.status !== 'Inactive')
     .forEach(p => {
-      if (!META[p.category]) return; // category was deleted/renamed — skip safely
-      META[p.category].products.push({
-        name: p.name,
-        molecule: p.molecule,
-        image: p.image && p.image.length ? p.image : 'images/placeholder-product.png',
-        assignedDoctors: p.assignedDoctors || [],
-        materialsCount: p.materialsCount || 1,
+      // Products can now belong to more than one category. Accept the new
+      // `categories` array, but fall back to the old single `category`
+      // string for any entry that hasn't been migrated yet.
+      const catIds = Array.isArray(p.categories) && p.categories.length
+        ? p.categories
+        : (p.category ? [p.category] : []);
+
+      catIds.forEach(catId => {
+        if (!META[catId]) return; // category was deleted/renamed — skip safely
+        META[catId].products.push({
+          name: p.name,
+          molecule: p.molecule,
+          image: p.image && p.image.length ? p.image : 'images/placeholder-product.png',
+          assignedDoctors: p.assignedDoctors || [],
+          materialsCount: p.materialsCount || 1,
+        });
       });
     });
 
-  return { DOCTORS, META, SPEC_COLORS };
+  // ── SETTINGS (cover / thank-you slides) ──────────────────
+  const SETTINGS = {
+    coverImage: settingsData.coverImage || '',
+    thanksImage: settingsData.thanksImage || '',
+  };
+
+  return { DOCTORS, META, SPEC_COLORS, SETTINGS };
 }

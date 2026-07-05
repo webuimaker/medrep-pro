@@ -274,6 +274,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 // Decap CMS admin panel at /admin, no code changes needed.
 let DOCTORS = [];
 let META = {};
+let SETTINGS = { coverImage: '', thanksImage: '' };
 const SPEC_COLORS = {
   "Orthopaedics":    {color:"#E85D26", bg:"#FFF3EE"},
   "Gynaecology":     {color:"#D946A8", bg:"#FDF0FB"},
@@ -328,12 +329,15 @@ let activeCatFilter = 'all';
 // from this instead of re-deriving a list from META, so slide counts
 // never drift from what's actually shown in the grid.
 let currentProductList = [];
+let lbCoverOffset = 0;   // 1 if a cover slide was prepended, else 0
+let lbHasThanks = false; // true if a thanks slide was appended
 
 // ═══ INIT ═══
 async function init() {
   const data = await loadContent();
   DOCTORS = data.DOCTORS;
   META = data.META;
+  SETTINGS = data.SETTINGS || SETTINGS;
 
   buildSpecFilters();
   renderDoctors(DOCTORS);
@@ -518,19 +522,43 @@ function openDoctorDetail(docId) {
 
 function openLightbox(productList, idx, doctorName) {
   currentProductList = productList;
-  lbRawSlides = currentProductList.map(p => p.image);
+
+  // Every presentation opens on the branded cover slide and closes on the
+  // thank-you slide, whatever doctor/product/category it was launched
+  // from — configured once in /admin under "App Settings" rather than
+  // hardcoded here. If either hasn't been set up yet, it's simply skipped.
+  const rawProductSlides = currentProductList.map(p => p.image);
+  const slides = [];
+  lbCoverOffset = 0;
+  if (SETTINGS.coverImage) {
+    slides.push(SETTINGS.coverImage);
+    lbCoverOffset = 1;
+  }
+  slides.push(...rawProductSlides);
+  lbHasThanks = !!SETTINGS.thanksImage;
+  if (lbHasThanks) slides.push(SETTINGS.thanksImage);
+
+  lbRawSlides = slides;
   lbSlides = lbRawSlides.map(src => imgUrl(src, FULL_W, FULL_Q));
-  lbCurrentIdx = idx;
-  lbProductName = currentProductList[idx].name;
+  lbCurrentIdx = idx + lbCoverOffset;
   lbDoctorName = doctorName;
 
-  document.getElementById('lb-product-name').textContent = lbProductName;
+  document.getElementById('lb-product-name').textContent = currentSlideLabel();
   document.getElementById('lb-doctor-name').textContent = 'Presenting to ' + doctorName;
 
   buildThumbStrip();
   updateLightboxSlide();
   document.getElementById('lightbox').classList.add('open');
   document.body.style.overflow = 'hidden';
+}
+
+// Returns the right header text for whichever slide is active — the
+// product name for regular slides, or a fixed label for the cover/thanks
+// bookend slides (which aren't real products).
+function currentSlideLabel() {
+  if (lbCoverOffset === 1 && lbCurrentIdx === 0) return 'Coastal Healthcare';
+  if (lbHasThanks && lbCurrentIdx === lbSlides.length - 1) return 'Thank You';
+  return currentProductList[lbCurrentIdx - lbCoverOffset].name;
 }
 
 function buildThumbStrip() {
@@ -550,9 +578,10 @@ function updateLightboxSlide() {
   const total = lbSlides.length;
   document.getElementById('lb-counter').textContent = (lbCurrentIdx+1) + ' / ' + total;
 
-  // lbCurrentIdx is a direct index into currentProductList, so the header
-  // always names the actual product being shown.
-  lbProductName = currentProductList[lbCurrentIdx].name;
+  // lbCurrentIdx is a direct index into lbSlides; currentSlideLabel()
+  // handles offsetting into currentProductList and naming the cover/
+  // thanks bookend slides correctly.
+  lbProductName = currentSlideLabel();
   document.getElementById('lb-product-name').textContent = lbProductName;
   document.getElementById('lb-doctor-name').textContent = 'Presenting to ' + lbDoctorName;
   document.getElementById('lb-progress-bar').style.width = ((lbCurrentIdx+1)/total*100) + '%';
@@ -685,11 +714,16 @@ function renderCatalog(key) {
   const grid = document.getElementById('catalog-grid');
   grid.innerHTML = products.map((p, i) => {
     const thumb = getThumbSrc(key, i);
-    const linkedDoctors = DOCTORS.filter(d => d.catalog === key).slice(0,3);
-    const doctorAvatars = linkedDoctors.map(d =>
+    // Doctor avatars now reflect this specific product's own "Assigned
+    // Doctors" list (set in /admin), not just anyone tagged to the same
+    // category — so it stays accurate as products get shared across
+    // multiple categories or reassigned between doctors.
+    const assignedNames = p.assignedDoctors || [];
+    const linkedDoctors = DOCTORS.filter(d => assignedNames.includes(d.name));
+    const doctorAvatars = linkedDoctors.slice(0,3).map(d =>
       `<div class="mini-avatar" title="${d.name}">${d.initials}</div>`
     ).join('');
-    const extraCount = DOCTORS.filter(d => d.catalog === key).length - 3;
+    const extraCount = linkedDoctors.length - 3;
     return `<div class="cat-product-card" onclick="openCatProduct('${key}',${i})">
       <img class="thumb" src="${thumb}" alt="${p.name}" loading="lazy" decoding="async">
       <div class="info">
@@ -698,7 +732,7 @@ function renderCatalog(key) {
         <div class="doctors-row">
           ${doctorAvatars}
           ${extraCount > 0 ? `<div class="mini-avatar" style="background:var(--muted)">+${extraCount}</div>` : ''}
-          <span class="doctors-label">${DOCTORS.filter(d=>d.catalog===key).length} doctors</span>
+          <span class="doctors-label">${linkedDoctors.length} doctors</span>
         </div>
       </div>
     </div>`;
@@ -706,11 +740,18 @@ function renderCatalog(key) {
 }
 
 function openCatProduct(catalogKey, productIdx) {
-  // Open lightbox directly from catalog with first doctor of that type.
-  // currentProductList was already set to this category's products by
-  // renderCatalog(), so we just pass it straight through.
-  const doc = DOCTORS.find(d => d.catalog === catalogKey);
-  const docName = doc ? doc.name : 'Doctor';
+  // Prefer this product's own assigned doctor (from /admin) as the
+  // "Presenting to" name; fall back to any doctor tagged to the category,
+  // then to a generic label if neither exists yet.
+  const product = currentProductList[productIdx];
+  const assigned = (product && product.assignedDoctors) || [];
+  let docName = 'Doctor';
+  if (assigned.length) {
+    docName = assigned[0];
+  } else {
+    const doc = DOCTORS.find(d => d.catalog === catalogKey);
+    if (doc) docName = doc.name;
+  }
   openLightbox(currentProductList, productIdx, docName);
 }
 

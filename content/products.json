@@ -2,576 +2,696 @@
   "products": [
     {
       "name": "Amlotal-AT",
-      "category": "general",
       "molecule": "Amlodipine 5mg + Atenolol 50mg Tablets",
       "image": "images/uploads/amlotal-at.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
       "name": "ATROCOS",
-      "category": "general",
       "molecule": "Atorvastatin 10 mg + Clopidogrel 75 mg Capsules",
       "image": "images/uploads/atrocos.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
       "name": "CALCOS ACTIVE",
-      "category": "ortho",
       "molecule": "Calcitriol 0.25 mcg + Calcium Carbonate 500 mg + Zinc 7.5 mg + Magnesium 50 mg Tablets",
       "image": "images/uploads/calcos-active.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "ortho"
+      ]
     },
     {
-    "name": "BILACOS",
-    "category": "general",
-    "molecule": "Calcium Citrate + Vitamin D3 + ...",
-    "image": "images/uploads/bilacos.jpg",
-    "assignedDoctors": [],
-    "materialsCount": 1,
-    "status": "Active"
+      "name": "BILACOS",
+      "molecule": "Calcium Citrate + Vitamin D3 + ...",
+      "image": "images/uploads/bilacos.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
-    "name": "COLACT",
-    "category": "general",
-    "molecule": "Lactulose Concentrate 10gm Syrup",
-    "image": "images/uploads/colact.jpg",
-    "assignedDoctors": [],
-    "materialsCount": 1,
-    "status": "Active"
+      "name": "COLACT",
+      "molecule": "Lactulose Concentrate 10gm Syrup",
+      "image": "images/uploads/colact.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
-    "name": "COSRIDE M1/M2",
-    "category": "general",
-    "molecule": "Metformin 500 mg + Glimepiride 1 mg / 2 mg Tablets",
-    "image": "images/uploads/cosride-m1-m2.jpg",
-    "assignedDoctors": [],
-    "materialsCount": 1,
-    "status": "Active"
+      "name": "COSRIDE M1/M2",
+      "molecule": "Metformin 500 mg + Glimepiride 1 mg / 2 mg Tablets",
+      "image": "images/uploads/cosride-m1-m2.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
-    "name": "Cotel-THA",
-    "category": "general",
-    "molecule": "Amlodipine 5 mg + Telmisartan 40 mg + Hydrochlorothiazide 12.5 mg Tablets",
-    "image": "images/uploads/cotel-tha.jpg",
-    "assignedDoctors": [],
-    "materialsCount": 1,
-    "status": "Active"
+      "name": "Cotel-THA",
+      "molecule": "Amlodipine 5 mg + Telmisartan 40 mg + Hydrochlorothiazide 12.5 mg Tablets",
+      "image": "images/uploads/cotel-tha.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
-    "name": "DAPZIN-10",
-    "category": "general",
-    "molecule": "Dapagliflozin 10 mg Tablets",
-    "image": "images/uploads/dapzin-10.jpg",
-    "assignedDoctors": [],
-    "materialsCount": 1,
-    "status": "Active"
+      "name": "DAPZIN-10",
+      "molecule": "Dapagliflozin 10 mg Tablets",
+      "image": "images/uploads/dapzin-10.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
-    "name": "Drocos-MF",
-    "category": "general",
-    "molecule": "Drotaverine Hydrochloride 80 mg + Mefenamic Acid 250 mg Tablets",
-    "image": "images/uploads/drocos-mf.jpg",
-    "assignedDoctors": [],
-    "materialsCount": 1,
-    "status": "Active"
+      "name": "Drocos-MF",
+      "molecule": "Drotaverine Hydrochloride 80 mg + Mefenamic Acid 250 mg Tablets",
+      "image": "images/uploads/drocos-mf.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
-    "name": "Esocos-DSR",
-    "category": "general",
-    "molecule": "Esomeprazole 20 mg + Domperidone 30 mg (SR) Capsules",
-    "image": "images/uploads/esocos-dsr.jpg",
-    "assignedDoctors": [],
-    "materialsCount": 1,
-    "status": "Active"
+      "name": "Esocos-DSR",
+      "molecule": "Esomeprazole 20 mg + Domperidone 30 mg (SR) Capsules",
+      "image": "images/uploads/esocos-dsr.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
-    "name": "FexCos-M",
-    "category": "general",
-    "molecule": "Fexofenadine 120 mg + Montelukast 10 mg Tablets",
-    "image": "images/uploads/fexcos-m.jpg",
-    "assignedDoctors": [],
-    "materialsCount": 1,
-    "status": "Active"
+      "name": "FexCos-M",
+      "molecule": "Fexofenadine 120 mg + Montelukast 10 mg Tablets",
+      "image": "images/uploads/fexcos-m.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
-    "name": "Lactoco-L",
-    "category": "general",
-    "molecule": "Lactic Acid Bacillus 150 Million Spores Sachet",
-    "image": "images/uploads/lactoco-l.jpg",
-    "assignedDoctors": [],
-    "materialsCount": 1,
-    "status": "Active"
+      "name": "Lactoco-L",
+      "molecule": "Lactic Acid Bacillus 150 Million Spores Sachet",
+      "image": "images/uploads/lactoco-l.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
-    "name": "NeuroGlow-GB",
-    "category": "ortho",
-    "molecule": "Gabapentin 300 mg + Methylcobalamin 500 mcg Tablets",
-    "image": "images/uploads/neuroglow-gb.jpg",
-    "assignedDoctors": [],
-    "materialsCount": 1,
-    "status": "Active"
+      "name": "NeuroGlow-GB",
+      "molecule": "Gabapentin 300 mg + Methylcobalamin 500 mcg Tablets",
+      "image": "images/uploads/neuroglow-gb.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active",
+      "categories": [
+        "ortho"
+      ]
     },
     {
-    "name": "Rifacos 200/400",
-    "category": "general",
-    "molecule": "Rifaximin 200 mg / 400 mg Tablets",
-    "image": "images/uploads/rifacos.jpg",
-    "assignedDoctors": [],
-    "materialsCount": 1,
-    "status": "Active"
+      "name": "Rifacos 200/400",
+      "molecule": "Rifaximin 200 mg / 400 mg Tablets",
+      "image": "images/uploads/rifacos.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
-    "name": "Rosucos Gold 20",
-    "category": "general",
-    "molecule": "Rosuvastatin 20 mg + Clopidogrel 75 mg + Aspirin 75 mg Capsules",
-    "image": "images/uploads/rosucos-gold.jpg",
-    "assignedDoctors": [],
-    "materialsCount": 1,
-    "status": "Active"
+      "name": "Rosucos Gold 20",
+      "molecule": "Rosuvastatin 20 mg + Clopidogrel 75 mg + Aspirin 75 mg Capsules",
+      "image": "images/uploads/rosucos-gold.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
-    "name": "Vosco",
-    "category": "general",
-    "molecule": "Voglibose Tablets 0.2 mg / 0.3 mg",
-    "image": "images/uploads/vosco.jpg",
-    "assignedDoctors": [],
-    "materialsCount": 1,
-    "status": "Active"
+      "name": "Vosco",
+      "molecule": "Voglibose Tablets 0.2 mg / 0.3 mg",
+      "image": "images/uploads/vosco.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
-    "name": "BronCos-LS",
-    "category": "general",
-    "molecule": "Ambroxol 7.5 mg + Levosalbutamol 0.25 mg + Guaiphenesin 12.5 mg Drops",
-    "image": "images/uploads/broncos-ls.jpg",
-    "assignedDoctors": [],
-    "materialsCount": 1,
-    "status": "Active"
+      "name": "BronCos-LS",
+      "molecule": "Ambroxol 7.5 mg + Levosalbutamol 0.25 mg + Guaiphenesin 12.5 mg Drops",
+      "image": "images/uploads/broncos-ls.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
       "name": "Calcos-60K",
-      "category": "ortho",
       "molecule": "Cholecalciferol 60000 IU Oral Solution",
       "image": "images/uploads/calcos-60k.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "ortho"
+      ]
     },
     {
       "name": "Calcos 60K D3",
-      "category": "ortho",
       "molecule": "Cholecalciferol 60000 IU",
       "image": "images/uploads/calcos-60k-d3.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "ortho"
+      ]
     },
     {
       "name": "Calcos-C",
-      "category": "ortho",
       "molecule": "Calcium Citrate Malate 500 mg + Calcitriol 0.25 mcg + Zinc 7.5 mg Softgel Capsules",
       "image": "images/uploads/calcos-c.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "ortho"
+      ]
     },
     {
       "name": "Calcos-GOLD",
-      "category": "ortho",
       "molecule": "Calcium Citrate Malate 500 mg + Calcitriol 0.25 mcg + Vitamin K2-7 45 mcg + Omega-3 Fatty Acid 150 mg + Cyanocobalamin 750 mcg + Folic Acid 400 mcg + Boron 1.5 mg Soft Gelatin Capsules",
       "image": "images/uploads/calcos-gold.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "ortho"
+      ]
     },
     {
       "name": "Cefucos 250/500",
-      "category": "ortho",
       "molecule": "Cefuroxime Axetil Tablets 250 mg / 500 mg",
       "image": "images/uploads/cefucos-250-500.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "ortho"
+      ]
     },
     {
       "name": "CoCef CV",
-      "category": "ortho",
       "molecule": "Cefixime 200 mg + Clavulanic Acid 125 mg Tablets / Cefixime 50 mg + Clavulanic Acid 31.25 mg Dry Syrup",
       "image": "images/uploads/cocef-cv.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "ortho"
+      ]
     },
     {
       "name": "Coseve 500/1000",
-      "category": "ortho",
       "molecule": "Evening Primrose Oil Softgel Capsules 500 mg / 1000 mg",
       "image": "images/uploads/coseve-500-1000.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "ortho"
+      ]
     },
     {
       "name": "Defcos",
-      "category": "ortho",
       "molecule": "Deflazacort 6 mg Tablets / Oral Suspension",
       "image": "images/uploads/defcos.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "ortho"
+      ]
     },
     {
       "name": "Extranac",
-      "category": "ortho",
       "molecule": "Thiocolchicoside 4 mg + Aceclofenac 100 mg Tablets",
       "image": "images/uploads/extranac-th.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "ortho"
+      ]
     },
     {
       "name": "Linzotal 100/600",
-      "category": "ortho",
       "molecule": "Linezolid 100 mg Syrup / Linezolid 600 mg Tablets",
       "image": "images/uploads/linzotal-100-600.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "ortho"
+      ]
     },
     {
       "name": "LORI-P",
-      "category": "ortho",
       "molecule": "Lornoxicam 8 mg + Paracetamol 325 mg Tablets",
       "image": "images/uploads/lori-p.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "ortho"
+      ]
     },
     {
       "name": "Rabital DSR",
-      "category": "ortho",
       "molecule": "Rabeprazole 20 mg + Domperidone 30 mg SR Capsules",
       "image": "images/uploads/rabital-dsr.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "ortho"
+      ]
     },
     {
       "name": "Rabital-L",
-      "category": [
-        "ortho"
-      ],
       "molecule": "Rabeprazole 20 mg + Levosulpiride (SR) 75 mg Capsules",
       "image": "images/uploads/rabital-l.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "ortho"
+      ]
     },
-
-
-
-
     {
       "name": "Calcos 60K D3",
-      "category": "ortho",
       "molecule": "Cholecalciferol 60000 IU",
       "image": "images/uploads/ortho-calcos-60k-d3.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "ortho"
+      ]
     },
     {
       "name": "Defcos",
-      "category": "ortho",
       "molecule": "Deflazacort 6mg Tablets/Syrup",
       "image": "images/uploads/ortho-defcos.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "ortho"
+      ]
     },
     {
       "name": "Etocos-TH",
-      "category": "ortho",
       "molecule": "Etoricoxib 60mg + Thiocolchicoside 4mg",
       "image": "images/uploads/ortho-etocos-th.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "ortho"
+      ]
     },
     {
       "name": "Lactoco",
-      "category": "ortho",
       "molecule": "Pre & Probiotics Capsules/Sachets",
       "image": "images/uploads/ortho-lactoco.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "ortho"
+      ]
     },
     {
       "name": "NeuroGlow GB",
-      "category": "ortho",
       "molecule": "Gabapentin 300mg + Methylcobalamin 500mg",
       "image": "images/uploads/ortho-neuroglow-gb.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "ortho"
+      ]
     },
     {
       "name": "Preminac SP",
-      "category": "ortho",
       "molecule": "Diclofenac + Paracetamol + Serratiopeptidase",
       "image": "images/uploads/ortho-preminac-sp.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "ortho"
+      ]
     },
     {
       "name": "Provimax DHA",
-      "category": "ortho",
       "molecule": "Protein Powder with DHA 200gm",
       "image": "images/uploads/ortho-provimax-dha.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "ortho"
+      ]
     },
     {
       "name": "Albacos IR",
-      "category": "general",
       "molecule": "Albendazole 400mg + Ivermectin 12mg",
       "image": "images/uploads/general-albacos-ir.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
       "name": "Amlotl",
-      "category": "general",
       "molecule": "Amlodipine Tablets",
       "image": "images/uploads/general-amlotl.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
       "name": "Artcos SL / Artcos",
-      "category": "general",
       "molecule": "Artemether + Lumefantrine Tablets",
       "image": "images/uploads/general-artcos-sl-artcos.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
       "name": "Cotlth",
-      "category": "general",
       "molecule": "Co-Trimoxazole Tablets",
       "image": "images/uploads/general-cotlth.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
       "name": "Cycltx",
-      "category": "general",
       "molecule": "Cyclosporine Capsules",
       "image": "images/uploads/general-cycltx.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
       "name": "Extrnct",
-      "category": "general",
       "molecule": "Herbal Extract Tablets",
       "image": "images/uploads/general-extrnct.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
       "name": "Fexcos M",
-      "category": "general",
       "molecule": "Fexofenadine + Montelukast",
       "image": "images/uploads/general-fexcos-m.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
       "name": "Kacym",
-      "category": "general",
       "molecule": "Kanamycin Capsules",
       "image": "images/uploads/general-kacym.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
       "name": "Kanld",
-      "category": "general",
       "molecule": "Ketoconazole Tablets",
       "image": "images/uploads/general-kanld.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
       "name": "Mefcos F",
-      "category": "general",
       "molecule": "Mefenamic Acid + Paracetamol Forte",
       "image": "images/uploads/general-mefcos-f.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
       "name": "Methis",
-      "category": "general",
       "molecule": "Metronidazole Tablets",
       "image": "images/uploads/general-methis.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
       "name": "Numtp",
-      "category": "general",
       "molecule": "Nimesulide + Paracetamol Tablets",
       "image": "images/uploads/general-numtp.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
       "name": "Ondcos",
-      "category": "general",
       "molecule": "Ondansetron Tablets",
       "image": "images/uploads/general-ondcos.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
       "name": "Pantd",
-      "category": "general",
       "molecule": "Pantoprazole Tablets",
       "image": "images/uploads/general-pantd.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
       "name": "PCold",
-      "category": "general",
       "molecule": "Paracetamol + Cold Combination",
       "image": "images/uploads/general-pcold.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
       "name": "Prmns",
-      "category": "general",
       "molecule": "Primaquine + Chloroquine",
       "image": "images/uploads/general-prmns.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
       "name": "Rabital",
-      "category": "general",
       "molecule": "Rabeprazole + Domperidone",
       "image": "images/uploads/general-rabital.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
       "name": "Roxycs",
-      "category": "general",
       "molecule": "Roxithromycin Capsules",
       "image": "images/uploads/general-roxycs.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
       "name": "Usrocs",
-      "category": "general",
       "molecule": "Ursodeoxycholic Acid Tablets",
       "image": "images/uploads/general-usrocs.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "general"
+      ]
     },
     {
       "name": "Arofil",
-      "category": "eye",
       "molecule": "Potassium Nitrate + Sodium Monofluorophosphate Toothpaste",
       "image": "images/uploads/eye-arofil.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "eye"
+      ]
     },
     {
       "name": "Clobgm",
-      "category": "eye",
       "molecule": "Clobetasol Propionate + Gentamicin Cream",
       "image": "images/uploads/eye-clobgm.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "eye"
+      ]
     },
     {
       "name": "Itchic",
-      "category": "eye",
       "molecule": "Anti-Itch Cream",
       "image": "images/uploads/eye-itchic.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "eye"
+      ]
     },
     {
       "name": "Povics",
-      "category": "eye",
       "molecule": "Povidone Iodine Eye/Ear Drops",
       "image": "images/uploads/eye-povics.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "eye"
+      ]
     },
     {
       "name": "Orthoc",
-      "category": "eye",
       "molecule": "Ofloxacin + Dexamethasone Eye Drops",
       "image": "images/uploads/eye-orthoc.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "eye"
+      ]
     },
     {
       "name": "Oflcs",
-      "category": "eye",
       "molecule": "Ofloxacin Eye/Ear Drops",
       "image": "images/uploads/eye-oflcs.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "eye"
+      ]
     },
     {
       "name": "Otocs",
-      "category": "eye",
       "molecule": "Ofloxacin + Lignocaine Ear Drops",
       "image": "images/uploads/eye-otocs.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active"
+      "status": "Active",
+      "categories": [
+        "eye"
+      ]
     }
   ]
 }

@@ -96,17 +96,19 @@ collections:
           - label: "Products"
             name: "products"
             widget: "list"
-            summary: "{{fields.name}} ({{fields.category}})"
+            summary: "{{fields.name}}"
             fields:
               - { label: "Product Name",  name: "name",     widget: "string" }
-              - label: "Category"
-                name: "category"
+              - label: "Categories"
+                name: "categories"
                 widget: "relation"
                 collection: "categories"
                 file: "categories"
                 search_fields: ["categories.*.title"]
                 display_fields: ["categories.*.title"]
                 value_field: "categories.*.id"
+                multiple: true
+                hint: "Select every catalogue tab this product should appear under — a product can belong to more than one"
               - { label: "Composition",   name: "molecule", widget: "string" }
               - label: "Product Image"
                 name: "image"
@@ -115,10 +117,15 @@ collections:
                 hint: "Upload the product card / brochure image"
               - label: "Assigned Doctors"
                 name: "assignedDoctors"
-                widget: "list"
+                widget: "relation"
+                collection: "doctors"
+                file: "doctors"
+                search_fields: ["doctors.*.name"]
+                display_fields: ["doctors.*.name"]
+                value_field: "doctors.*.name"
+                multiple: true
                 required: false
-                hint: "Type doctor names exactly as entered in the Doctors collection"
-                field: { label: "Doctor Name", name: "doctorName", widget: "string" }
+                hint: "Tick every doctor this product should be recommended for — mirrors the doctor's own Assigned Products picker"
               - label: "Materials Count"
                 name: "materialsCount"
                 widget: "number"
@@ -154,3 +161,26 @@ collections:
                 name: "specialties"
                 widget: "list"
                 field: { label: "Specialty", name: "specialty", widget: "string" }
+
+  # ──────────────────────────────────────────────
+  # 4) APP SETTINGS — cover & thank-you slides shown at the start/end of
+  #    every presentation, no matter which doctor, product, or category
+  #    it was opened from.
+  # ──────────────────────────────────────────────
+  - name: "settings"
+    label: "⚙️ App Settings"
+    files:
+      - name: "settings"
+        label: "Presentation Settings"
+        file: "content/settings.json"
+        fields:
+          - label: "Opening / Cover Slide"
+            name: "coverImage"
+            widget: "image"
+            required: false
+            hint: "Shown as the very first slide in every presentation (e.g. Coastal Healthcare intro)"
+          - label: "Closing / Thank You Slide"
+            name: "thanksImage"
+            widget: "image"
+            required: false
+            hint: "Shown as the very last slide in every presentation"

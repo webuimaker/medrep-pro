@@ -1,11 +1,15 @@
 # ══════════════════════════════════════════════════════════════
 # Netlify site configuration for MedRep Pro
-# This is a plain static site (HTML/CSS/JS) — no build step required.
+# The site itself is still plain static HTML/JS (no framework, no
+# bundler). The only thing the build step does is run
+# scripts/optimize-images.js, which resizes/compresses anything under
+# images/uploads before it's published — including images just added
+# through /admin, since every CMS save triggers a fresh build here.
 # ══════════════════════════════════════════════════════════════
 
 [build]
   publish = "."
-  command = ""
+  command = "npm install && npm run build"
 
 # Keep the JSON content files fresh on every request instead of cached,
 # so edits made in /admin show up on the live site right away.
