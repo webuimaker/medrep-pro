@@ -749,6 +749,16 @@
         "paediatrics"
       ],
       "image": "/images/uploads/extrazyme-1.jpg"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "Lycocos Plus",
+      "categories": [
+        "paediatrics"
+      ],
+      "molecule": "Lycopene + Pomegranate + Grape Seed Extract + Lutein + Beta Carotene + Multivitamins Softgel Capsules",
+      "image": "/images/uploads/lycocos-plus.jpg"
     }
   ]
 }
