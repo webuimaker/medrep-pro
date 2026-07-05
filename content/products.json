@@ -717,6 +717,16 @@
         "paediatrics"
       ],
       "molecule": "Ofloxacin 50 mg + Metronidazole 120 mg + Simethicone 10 mg Syrup"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "RACTAL J",
+      "categories": [
+        "paediatrics"
+      ],
+      "molecule": "Racecadotril 15 mg + Saccharomyces Boulardii 282.5 mg + Zinc Gluconate (Eq. to Elemental Zinc 7.5 mg) Sachet",
+      "image": "/images/uploads/ractal-j.jpg"
     }
   ]
 }
