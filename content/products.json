@@ -566,17 +566,6 @@
       ]
     },
     {
-      "name": "PCold",
-      "molecule": "Paracetamol + Cold Combination",
-      "image": "images/uploads/general-pcold.jpg",
-      "assignedDoctors": [],
-      "materialsCount": 1,
-      "status": "Active",
-      "categories": [
-        "general"
-      ]
-    },
-    {
       "name": "Prmns",
       "molecule": "Primaquine + Chloroquine",
       "image": "images/uploads/general-prmns.jpg",
