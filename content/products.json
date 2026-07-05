@@ -824,6 +824,16 @@
       ],
       "molecule": "Cefixime 200 mg + Ofloxacin 200 mg Tablets",
       "image": "/images/uploads/cocef-o.jpg"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "Vitocos Gold",
+      "categories": [
+        "general"
+      ],
+      "molecule": "Multivitamins, Multiminerals, Antioxidants with Ginseng, Green Tea Extract & Omega-3 Soft Gel Capsules",
+      "image": "/images/uploads/vitocos-gold.jpg"
     }
   ]
 }
