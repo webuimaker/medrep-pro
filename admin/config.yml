@@ -98,8 +98,8 @@ collections:
             widget: "list"
             summary: "{{fields.name}}"
             fields:
-              - { label: "Product Name",  name: "name",     widget: "string" }
-              - label: "Categories"
+              - { label: "Product Name",  name: "name",     widget: "string" }  
+              - label: "Assigned Categories"
                 name: "categories"
                 widget: "relation"
                 collection: "categories"
@@ -108,13 +108,14 @@ collections:
                 display_fields: ["categories.*.title"]
                 value_field: "categories.*.id"
                 multiple: true
+                required: false
                 hint: "Select every catalogue tab this product should appear under — a product can belong to more than one"
               - { label: "Composition",   name: "molecule", widget: "string" }
               - label: "Product Image"
                 name: "image"
                 widget: "image"
                 required: false
-                hint: "Upload the product card / brochure image"
+                hint: "Upload the product card / brochure image" 
               - label: "Assigned Doctors"
                 name: "assignedDoctors"
                 widget: "relation"
