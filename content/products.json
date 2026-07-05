@@ -4,12 +4,15 @@
       "name": "Amlotal-AT",
       "molecule": "Amlodipine 5mg + Atenolol 50mg Tablets",
       "image": "images/uploads/amlotal-at.jpg",
-      "assignedDoctors": [],
+      "assignedDoctors": [
+        "Dr Kumar Gutam"
+      ],
       "materialsCount": 1,
       "status": "Active",
       "categories": [
         "general"
-      ]
+      ],
+      "category": "general"
     },
     {
       "name": "ATROCOS",
