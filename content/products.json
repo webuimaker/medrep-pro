@@ -746,6 +746,16 @@
       ],
       "molecule": "Ketorolac Tromethamine 10 mg Tablets",
       "image": "/images/uploads/general-mefcos-f.jpg"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "Neurogrow Plus",
+      "categories": [
+        "ortho"
+      ],
+      "molecule": "Methylcobalamin 1000 mcg + Pyridoxine Hydrochloride 100 mg + Niacinamide 100 mg Injection",
+      "image": "/images/uploads/neuroglow-plus.jpg"
     }
   ]
 }
