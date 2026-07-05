@@ -739,6 +739,16 @@
       ],
       "molecule": "Cyproheptadine HCl 2 mg + Tricholine Citrate (65%) 275 mg + Sorbitol Solution (70%) 200 mg Syrup",
       "image": "/images/uploads/cyrocos.jpg"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "Extrazyme",
+      "molecule": "Fungal Diastase 50 mg + Pepsin 10 mg Syrup",
+      "categories": [
+        "paediatrics"
+      ],
+      "image": "/images/uploads/extrazyme-1.jpg"
     }
   ]
 }
