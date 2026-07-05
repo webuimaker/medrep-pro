@@ -18,7 +18,6 @@
 // history or touch anything already committed to the repo beyond this
 // build's output.
 // ══════════════════════════════════════════════════════════════
-
 const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
@@ -33,7 +32,7 @@ async function optimizeFile(filePath) {
   const ext = path.extname(filePath).toLowerCase();
   const original = fs.readFileSync(filePath);
 
-  let pipeline = sharp(original).rotate(); // auto-orient using EXIF, then strip it
+  let pipeline = sharp(original).rotate();
   const meta = await sharp(original).metadata();
 
   if (meta.width && meta.width > MAX_WIDTH) {
@@ -42,14 +41,9 @@ async function optimizeFile(filePath) {
 
   let outBuffer;
   if (ext === '.png') {
-    outBuffer = await pipeline
-      .png({ quality: PNG_QUALITY, compressionLevel: 9 })
-      .toBuffer();
+    outBuffer = await pipeline.png({ quality: PNG_QUALITY, compressionLevel: 9 }).toBuffer();
   } else {
-    // Treat .jpg/.jpeg (the vast majority of uploads) the same way
-    outBuffer = await pipeline
-      .jpeg({ quality: JPEG_QUALITY, progressive: true, mozjpeg: true })
-      .toBuffer();
+    outBuffer = await pipeline.jpeg({ quality: JPEG_QUALITY, progressive: true, mozjpeg: true }).toBuffer();
   }
 
   if (outBuffer.length < before) {
@@ -65,10 +59,7 @@ async function run() {
     return;
   }
 
-  const files = fs
-    .readdirSync(DIR)
-    .filter((f) => /\.(jpe?g|png)$/i.test(f));
-
+  const files = fs.readdirSync(DIR).filter((f) => /\.(jpe?g|png)$/i.test(f));
   console.log(`Optimizing ${files.length} image(s) in images/uploads ...`);
 
   let totalBefore = 0;
@@ -83,22 +74,16 @@ async function run() {
       totalAfter += result.after;
       if (result.changed) {
         changedCount++;
-        console.log(
-          `  ✓ ${file}: ${(result.before / 1024).toFixed(0)}KB → ${(result.after / 1024).toFixed(0)}KB`
-        );
+        console.log(`  ✓ ${file}: ${(result.before / 1024).toFixed(0)}KB → ${(result.after / 1024).toFixed(0)}KB`);
       } else {
         console.log(`  – ${file}: already optimized, left as-is`);
       }
     } catch (err) {
-      // Never fail the whole build over one bad/corrupt image — skip it
-      // and keep the original file exactly as uploaded.
       console.error(`  ✗ ${file}: could not process (${err.message}) — left untouched`);
     }
   }
 
-  console.log(
-    `Done. ${changedCount} file(s) optimized. Total: ${(totalBefore / 1024 / 1024).toFixed(1)}MB → ${(totalAfter / 1024 / 1024).toFixed(1)}MB`
-  );
+  console.log(`Done. ${changedCount} file(s) optimized. Total: ${(totalBefore / 1024 / 1024).toFixed(1)}MB → ${(totalAfter / 1024 / 1024).toFixed(1)}MB`);
 }
 
 run();
