@@ -29,6 +29,35 @@
       "hospital": "Church Rd, Gaya",
       "specialty": "Ortho"
     },
+    
+    {
+      "products": [
+        "Amlotal-AT",
+        "ATROCOS",
+        "BILACOS",
+        "CALCOS ACTIVE",
+        "COLACT",
+        "COSRIDE M1/M2",
+        "Cotel-THA",
+        "DAPZIN-10",
+        "Drocos-MF",
+        "Esocos-DSR",
+        "FexCos-M",
+        "Lactoco-L",
+        "NeuroGlow-GB",
+        "Rifacos 200/400",
+        "Rosucos Gold 20",
+        "Vosco"
+      ],
+      "city": "Gaya",
+      "name": "Dr. Kumar Gautam",
+      "qualification": "MBBS, Physician",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "general",
+      "hospital": "GB Road, Gaya",
+      "specialty": "General Physician"
+    },   
     {
       "notes": "",
       "mobile": "",
@@ -196,34 +225,6 @@
       "hospital": "Neuro Care Centre",
       "email": "",
       "specialty": "Neurology"
-    },
-    {
-      "products": [
-        "Amlotal-AT",
-        "ATROCOS",
-        "BILACOS",
-        "CALCOS ACTIVE",
-        "COLACT",
-        "COSRIDE M1/M2",
-        "Cotel-THA",
-        "DAPZIN-10",
-        "Drocos-MF",
-        "Esocos-DSR",
-        "FexCos-M",
-        "Lactoco-L",
-        "NeuroGlow-GB",
-        "Rifacos 200/400",
-        "Rosucos Gold 20",
-        "Vosco"
-      ],
-      "city": "Gaya",
-      "name": "Dr. Kumar Gautam",
-      "qualification": "MBBS, Physician",
-      "state": "Bihar",
-      "status": "Active",
-      "catalog": "general",
-      "hospital": "GB Road, Gaya",
-      "specialty": "General Physician"
     }
   ]
 }
