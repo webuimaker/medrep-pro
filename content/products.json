@@ -310,7 +310,8 @@
       "materialsCount": 1,
       "status": "Active",
       "categories": [
-        "ortho"
+        "ortho",
+        "general"
       ]
     },
     {
