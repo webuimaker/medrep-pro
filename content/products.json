@@ -727,6 +727,16 @@
       ],
       "molecule": "Racecadotril 15 mg + Saccharomyces Boulardii 282.5 mg + Zinc Gluconate (Eq. to Elemental Zinc 7.5 mg) Sachet",
       "image": "/images/uploads/ractal-j.jpg"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "COSLIV",
+      "categories": [
+        "paediatrics"
+      ],
+      "molecule": "Silymarin 35 mg + Niacinamide 20 mg + Vitamin B12 1 mcg + Vitamin B6 1.5 mg Suspension",
+      "image": "/images/uploads/cosliv-syp.jpg"
     }
   ]
 }
