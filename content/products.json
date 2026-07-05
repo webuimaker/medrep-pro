@@ -368,17 +368,6 @@
       ]
     },
     {
-      "name": "NeuroGlow GB",
-      "molecule": "Gabapentin 300mg + Methylcobalamin 500mg",
-      "image": "images/uploads/ortho-neuroglow-gb.jpg",
-      "assignedDoctors": [],
-      "materialsCount": 1,
-      "status": "Active",
-      "categories": [
-        "ortho"
-      ]
-    },
-    {
       "name": "Preminac SP",
       "molecule": "Diclofenac + Paracetamol + Serratiopeptidase",
       "image": "images/uploads/ortho-preminac-sp.jpg",
