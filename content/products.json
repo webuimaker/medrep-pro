@@ -814,6 +814,16 @@
       ],
       "molecule": "Cefixime 100mg Dispersible Tablets, Cefixime 200mg Tablets, Cefixime 200mg + Lactic Acid Bacillus Tablets, Cefixime 50mg + Lactic Acid Bacillus Dry Syrup",
       "image": "/images/uploads/cocef.jpg"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "Cocef-O 200",
+      "categories": [
+        "general"
+      ],
+      "molecule": "Cefixime 200 mg + Ofloxacin 200 mg Tablets",
+      "image": "/images/uploads/cocef-o.jpg"
     }
   ]
 }
