@@ -524,14 +524,15 @@
       ]
     },
     {
-      "name": "Ondcos",
-      "molecule": "Ondansetron Tablets",
+      "name": "Nemutal Plus",
+      "molecule": "Nimesulide 100 mg + Paracetamol 325 mg Tablets",
       "image": "images/uploads/general-ondcos.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
       "status": "Active",
       "categories": [
-        "general"
+        "general",
+        "ortho"
       ]
     },
     {
