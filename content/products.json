@@ -557,17 +557,6 @@
       ]
     },
     {
-      "name": "Rabital",
-      "molecule": "Rabeprazole + Domperidone",
-      "image": "images/uploads/general-rabital.jpg",
-      "assignedDoctors": [],
-      "materialsCount": 1,
-      "status": "Active",
-      "categories": [
-        "general"
-      ]
-    },
-    {
       "name": "Roxycs",
       "molecule": "Roxithromycin Capsules",
       "image": "images/uploads/general-roxycs.jpg",
@@ -634,14 +623,14 @@
       ]
     },
     {
-      "name": "Orthoc",
-      "molecule": "Ofloxacin + Dexamethasone Eye Drops",
+      "name": "Orthocos",
+      "molecule": "Diclofenac Diethylamine 1.16% w/w + Methyl Salicylate 10% w/w + Menthol 5% w/w + Linseed Oil 3% w/w Ointment",
       "image": "images/uploads/eye-orthoc.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
       "status": "Active",
       "categories": [
-        "eye"
+        "ortho"
       ]
     },
     {
