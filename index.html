@@ -103,6 +103,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 #lb-counter{color:#fff;font-size:13px;font-weight:500}
 #lb-progress{width:180px;height:3px;background:rgba(255,255,255,0.2);border-radius:2px;overflow:hidden}
 #lb-progress-bar{height:100%;background:var(--azure);border-radius:2px;transition:width .25s ease}
+#lb-zoom-hint{color:rgba(255,255,255,0.4);font-size:10px}
 #lb-thumbs{display:flex;gap:6px;overflow-x:auto;padding:4px 0;max-width:100%;scrollbar-width:none}
 #lb-thumbs::-webkit-scrollbar{display:none}
 .lb-thumb{width:56px;height:36px;border-radius:4px;object-fit:cover;cursor:pointer;opacity:.45;border:2px solid transparent;flex-shrink:0;transition:all .15s}
@@ -260,6 +261,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
   <div id="lb-bottom">
     <div id="lb-counter">1 / 10</div>
     <div id="lb-progress"><div id="lb-progress-bar" style="width:10%"></div></div>
+    <div id="lb-zoom-hint">Pinch or double-tap image to zoom</div>
     <div id="lb-thumbs"></div>
   </div>
 </div>
@@ -331,6 +333,15 @@ let activeCatFilter = 'all';
 let currentProductList = [];
 let lbCoverOffset = 0;   // 1 if a cover slide was prepended, else 0
 let lbHasThanks = false; // true if a thanks slide was appended
+
+// ── Lightbox zoom/pan state ──────────────────────────────────
+let lbScale = 1, lbPanX = 0, lbPanY = 0;
+let lbBaseW = 0, lbBaseH = 0;       // rendered image size at scale 1 (measured on load)
+let isPinching = false, isPanning = false;
+let pinchStartDist = 0, pinchStartScale = 1;
+let panStartX = 0, panStartY = 0, panOriginX = 0, panOriginY = 0;
+let lastTapTime = 0, lastTapX = 0, lastTapY = 0;
+const LB_MIN_SCALE = 1, LB_MAX_SCALE = 4;
 
 // ═══ INIT ═══
 async function init() {
@@ -572,6 +583,7 @@ function buildThumbStrip() {
 }
 
 function updateLightboxSlide() {
+  resetZoom();
   const img = document.getElementById('lb-img');
   img.decoding = 'async';
   img.src = lbSlides[lbCurrentIdx];
@@ -628,13 +640,131 @@ function closeLightbox() {
   document.body.style.overflow = '';
 }
 
-// Touch swipe for lightbox
+// ═══ LIGHTBOX ZOOM / PAN ═══
+// The rest of the app stays locked at 1x (see the viewport meta tag) so
+// nobody accidentally pinch-zooms the nav bar or doctor grid. This is a
+// self-contained zoom implemented with CSS transforms, scoped entirely
+// to the lightbox image, so it doesn't fight with that lock.
+
+function applyZoomTransform(instant) {
+  const img = document.getElementById('lb-img');
+  img.style.transition = instant ? 'none' : 'transform .25s ease';
+  img.style.transform = `translate(${lbPanX}px, ${lbPanY}px) scale(${lbScale})`;
+}
+
+function resetZoom() {
+  lbScale = 1; lbPanX = 0; lbPanY = 0;
+  applyZoomTransform(false);
+}
+
+// Keeps the image from being panned off-screen — clamps based on how
+// much bigger than the visible area the zoomed image currently is.
+function clampPan() {
+  const area = document.getElementById('lb-image-area');
+  const scaledW = lbBaseW * lbScale;
+  const scaledH = lbBaseH * lbScale;
+  const maxX = Math.max(0, (scaledW - area.clientWidth) / 2);
+  const maxY = Math.max(0, (scaledH - area.clientHeight) / 2);
+  lbPanX = Math.min(maxX, Math.max(-maxX, lbPanX));
+  lbPanY = Math.min(maxY, Math.max(-maxY, lbPanY));
+}
+
+function touchDist(touches) {
+  const dx = touches[0].clientX - touches[1].clientX;
+  const dy = touches[0].clientY - touches[1].clientY;
+  return Math.hypot(dx, dy);
+}
+
+// Measure the image's natural rendered size (at scale 1) every time a new
+// slide finishes loading — needed to correctly clamp panning for that
+// specific image's dimensions.
+document.getElementById('lb-img').addEventListener('load', function () {
+  lbBaseW = this.clientWidth;
+  lbBaseH = this.clientHeight;
+});
+
+// Touch swipe / pinch-zoom / pan / double-tap-zoom for lightbox
 const lb = document.getElementById('lightbox');
-lb.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; touchStartY = e.touches[0].clientY; }, {passive:true});
+
+lb.addEventListener('touchstart', e => {
+  if (e.touches.length === 2) {
+    isPinching = true;
+    isPanning = false;
+    pinchStartDist = touchDist(e.touches);
+    pinchStartScale = lbScale;
+  } else if (e.touches.length === 1) {
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+    if (lbScale > 1.01) {
+      // Already zoomed in — a single finger drags/pans instead of
+      // triggering next/prev navigation.
+      isPanning = true;
+      panStartX = e.touches[0].clientX;
+      panStartY = e.touches[0].clientY;
+      panOriginX = lbPanX;
+      panOriginY = lbPanY;
+    } else {
+      isPanning = false;
+    }
+  }
+}, {passive:true});
+
+lb.addEventListener('touchmove', e => {
+  if (e.touches.length === 2 && isPinching) {
+    const dist = touchDist(e.touches);
+    let newScale = pinchStartScale * (dist / pinchStartDist);
+    lbScale = Math.min(LB_MAX_SCALE, Math.max(LB_MIN_SCALE, newScale));
+    clampPan();
+    applyZoomTransform(true);
+    e.preventDefault();
+  } else if (e.touches.length === 1 && isPanning) {
+    lbPanX = panOriginX + (e.touches[0].clientX - panStartX);
+    lbPanY = panOriginY + (e.touches[0].clientY - panStartY);
+    clampPan();
+    applyZoomTransform(true);
+    e.preventDefault();
+  }
+}, {passive:false});
+
 lb.addEventListener('touchend', e => {
-  const dx = e.changedTouches[0].clientX - touchStartX;
-  const dy = e.changedTouches[0].clientY - touchStartY;
-  if(Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) {
+  if (e.touches.length > 0) return; // another finger still down (e.g. lifted 1 of 2)
+
+  if (isPinching) {
+    isPinching = false;
+    if (lbScale < 1.05) resetZoom(); // snap back if barely zoomed
+  }
+
+  const wasPanning = isPanning;
+  isPanning = false;
+  if (wasPanning) return; // just finished panning — nothing else to do
+
+  const touch = e.changedTouches[0];
+  const dx = touch.clientX - touchStartX;
+  const dy = touch.clientY - touchStartY;
+  const dist = Math.hypot(dx, dy);
+  const now = Date.now();
+
+  if (dist < 10) {
+    // A tap, not a drag. Check if it's the second tap of a double-tap.
+    const isDoubleTap = (now - lastTapTime < 300) &&
+      Math.hypot(touch.clientX - lastTapX, touch.clientY - lastTapY) < 40;
+    if (isDoubleTap) {
+      if (lbScale > 1.01) {
+        resetZoom();
+      } else {
+        lbScale = 2.5;
+        clampPan();
+        applyZoomTransform(false);
+      }
+      lastTapTime = 0;
+    } else {
+      lastTapTime = now;
+      lastTapX = touch.clientX;
+      lastTapY = touch.clientY;
+    }
+  } else if (lbScale <= 1.01 && Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) {
+    // Only swipe-to-navigate when not zoomed in — while zoomed, a
+    // horizontal drag pans the image instead (handled above).
     lbNav(dx < 0 ? 1 : -1);
   }
 }, {passive:true});
