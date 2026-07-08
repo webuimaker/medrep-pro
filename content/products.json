@@ -8,7 +8,8 @@
       "materialsCount": 1,
       "status": "Active",
       "categories": [
-        "general"
+        "general",
+        "ortho"
       ],
       "category": "general"
     },
@@ -279,7 +280,8 @@
       "categories": [
         "ortho",
         "paediatrics",
-        "general"
+        "general",
+        "Dental"
       ]
     },
     {
@@ -313,7 +315,8 @@
       "status": "Active",
       "categories": [
         "ortho",
-        "general"
+        "general",
+        "Dental"
       ]
     },
     {
@@ -359,7 +362,8 @@
       "status": "Active",
       "categories": [
         "ortho",
-        "general"
+        "general",
+        "Dental"
       ]
     },
     {
@@ -381,7 +385,8 @@
       "materialsCount": 1,
       "status": "Active",
       "categories": [
-        "ortho"
+        "ortho",
+        "Dental"
       ]
     },
     {
@@ -668,7 +673,8 @@
       "name": "CosClav",
       "categories": [
         "general",
-        "paediatrics"
+        "paediatrics",
+        "Dental"
       ],
       "molecule": "Amoxycillin + Clavulanic Acid Injections/Tablets/Dry Syrup with Lactic Acid Bacillus",
       "image": "/images/uploads/cosclav.jpg"
@@ -739,7 +745,8 @@
       "status": "Active",
       "name": "Kanil-DT",
       "categories": [
-        "ortho"
+        "ortho",
+        "Dental"
       ],
       "molecule": "Ketorolac Tromethamine 10 mg Tablets",
       "image": "/images/uploads/general-mefcos-f.jpg"
@@ -760,7 +767,8 @@
       "status": "Active",
       "name": "Tripcos-D",
       "categories": [
-        "ortho"
+        "ortho",
+        "Dental"
       ],
       "molecule": "Trypsin 48 mg + Bromelain 90 mg + Rutoside Trihydrate 100 mg + Diclofenac Sodium 50 mg Tablets",
       "image": "/images/uploads/tripcos-d.jpg"
