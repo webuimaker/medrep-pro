@@ -85,9 +85,6 @@ collections:
                   search_fields: ["products.*.name"]
                   display_fields: ["products.*.name"]
                   value_field: "products.*.name"
-                  multiple: true
-                  required: false
-                  hint: "Tick every product this doctor should see when their profile is opened"
 
   # ──────────────────────────────────────────────
   # 2) PRODUCTS — one JSON file holding a list of products
@@ -163,7 +160,7 @@ collections:
                 required: false
                 hint: "Add every product that belongs in this category's tab, in the exact order you want them to appear — the same product can also appear in other categories with a different order there"
                 field:
-                  label: "products.*.name"
+                  label: "Product"
                   name: "product"
                   widget: "relation"
                   collection: "products"
