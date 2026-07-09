@@ -1,6 +1,5 @@
 {
   "doctors": [
-    
     {
       "products": [
         "Calcos-60K",
@@ -27,9 +26,8 @@
       "status": "Active",
       "catalog": "general",
       "hospital": "Church Rd, Gaya",
-      "specialty": "Ortho"
+      "specialty": "Orthopaedics"
     },
-    
     {
       "products": [
         "Amlotal-AT",
@@ -57,7 +55,7 @@
       "catalog": "general",
       "hospital": "GB Road, Gaya",
       "specialty": "General Physician"
-    },   
+    },
     {
       "notes": "",
       "mobile": "",
