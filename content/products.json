@@ -1,30 +1,6 @@
 {
   "products": [
     {
-      "name": "Amlotal-AT",
-      "molecule": "Amlodipine 5mg + Atenolol 50mg Tablets",
-      "image": "images/uploads/amlotal-at.jpg",
-      "assignedDoctors": [],
-      "materialsCount": 1,
-      "status": "Active",
-      "categories": [
-        "general",
-        "ortho"
-      ],
-      "category": "general"
-    },
-    {
-      "name": "ATROCOS",
-      "molecule": "Atorvastatin 10 mg + Clopidogrel 75 mg Capsules",
-      "image": "images/uploads/atrocos.jpg",
-      "assignedDoctors": [],
-      "materialsCount": 1,
-      "status": "Active",
-      "categories": [
-        "general"
-      ]
-    },
-    {
       "name": "CALCOS ACTIVE",
       "molecule": "Calcitriol 0.25 mcg + Calcium Carbonate 500 mg + Zinc 7.5 mg + Magnesium 50 mg Tablets",
       "image": "images/uploads/calcos-active.jpg",
@@ -314,9 +290,7 @@
       "materialsCount": 1,
       "status": "Active",
       "categories": [
-        "ortho",
-        "general",
-        "Dental"
+        "extra"
       ]
     },
     {
@@ -329,17 +303,6 @@
       "categories": [
         "ortho",
         "general"
-      ]
-    },
-    {
-      "name": "Calcos 60K D3",
-      "molecule": "Cholecalciferol 60000 IU",
-      "image": "images/uploads/ortho-calcos-60k-d3.jpg",
-      "assignedDoctors": [],
-      "materialsCount": 1,
-      "status": "Active",
-      "categories": [
-        "ortho"
       ]
     },
     {
@@ -398,17 +361,6 @@
       "status": "Active",
       "categories": [
         "ortho"
-      ]
-    },
-    {
-      "name": "Albacos IR",
-      "molecule": "Albendazole 400mg + Ivermectin 12mg",
-      "image": "images/uploads/general-albacos-ir.jpg",
-      "assignedDoctors": [],
-      "materialsCount": 1,
-      "status": "Active",
-      "categories": [
-        "general"
       ]
     },
     {
@@ -509,51 +461,6 @@
       "categories": [
         "general",
         "paediatrics"
-      ]
-    },
-    {
-      "name": "Methis",
-      "molecule": "Metronidazole Tablets",
-      "image": "images/uploads/general-methis.jpg",
-      "assignedDoctors": [],
-      "materialsCount": 1,
-      "status": "Active",
-      "categories": [
-        "general"
-      ]
-    },
-    {
-      "name": "Numtp",
-      "molecule": "Nimesulide + Paracetamol Tablets",
-      "image": "images/uploads/general-numtp.jpg",
-      "assignedDoctors": [],
-      "materialsCount": 1,
-      "status": "Active",
-      "categories": [
-        "general"
-      ]
-    },
-    {
-      "name": "Nemutal Plus",
-      "molecule": "Nimesulide 100 mg + Paracetamol 325 mg Tablets",
-      "image": "images/uploads/general-ondcos.jpg",
-      "assignedDoctors": [],
-      "materialsCount": 1,
-      "status": "Active",
-      "categories": [
-        "general",
-        "ortho"
-      ]
-    },
-    {
-      "name": "ONDOCOS",
-      "molecule": "Ondansetron Injection 2 mg + Ondansetron Tablets 4 mg/8 mg + Ondansetron Syrup 2 mg",
-      "image": "images/uploads/general-pantd.jpg",
-      "assignedDoctors": [],
-      "materialsCount": 1,
-      "status": "Active",
-      "categories": [
-        "general"
       ]
     },
     {
@@ -843,6 +750,17 @@
       ],
       "molecule": "Multivitamins, Multiminerals, Antioxidants with Ginseng, Green Tea Extract & Omega-3 Soft Gel Capsules",
       "image": "/images/uploads/vitocos-gold.jpg"
+    },
+    {
+      "name": "Nemutal Plus",
+      "molecule": "Nimesulide 100 mg + Paracetamol 325 mg Tablets",
+      "image": "images/uploads/general-ondcos.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active",
+      "categories": [
+        "extra"
+      ]
     }
   ]
 }

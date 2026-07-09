@@ -73,15 +73,21 @@ collections:
                 hint: "Which category tab this doctor's badge/tag reflects"
               - label: "Assigned Products"
                 name: "products"
-                widget: "relation"
-                collection: "products"
-                file: "products"
-                search_fields: ["products.*.name"]
-                display_fields: ["products.*.name"]
-                value_field: "products.*.name"
-                multiple: true
+                widget: "list"
                 required: false
-                hint: "Tick every product this doctor should see when their profile is opened"
+                hint: "Drag the ≡ handle to reorder — this is exactly the order products will appear when this doctor's profile is opened"
+                field:
+                  label: "Product"
+                  name: "product"
+                  widget: "relation"
+                  collection: "products"
+                  file: "products"
+                  search_fields: ["products.*.name"]
+                  display_fields: ["products.*.name"]
+                  value_field: "products.*.name"
+                  multiple: true
+                  required: false
+                  hint: "Tick every product this doctor should see when their profile is opened"
 
   # ──────────────────────────────────────────────
   # 2) PRODUCTS — one JSON file holding a list of products

@@ -57,6 +57,14 @@
       "specialties": [
         "Child"
       ]
-    }
+    },
+   {
+    "id": "Extra",
+    "title": "Extra",
+    "color": "#6B7280",
+    "bg": "#F3F4F6",
+    "icon": "📦",
+    "specialties": []
+  }
   ]
 }
