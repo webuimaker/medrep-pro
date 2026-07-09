@@ -13,28 +13,25 @@
       ],
       "products": [
         "Extranac",
-        "CALCOS ACTIVE",
-        "Esocos-DSR",
-        "NeuroGlow-GB",
-        "Calcos-60K",
-        "Calcos 60K D3",
-        "Calcos-C",
-        "Calcos-GOLD",
-        "Cefucos 250/500",
-        "CoCef CV",
-        "Coseve 500/1000",
-        "Linzotal 100/600",
-        "LORI-P",
-        "Rabital-L",
-        "Defcos",
         "Etocos-TH",
-        "Lactoco",
-        "Preminac SP",
-        "Provimax DHA",
-        "Orthocos",
-        "Kanil-DT",
+        "NeuroGlow-GB",
         "Neurogrow Plus",
         "Tripcos-D",
+        "Defcos",
+        "Rabital-L",
+        "Rabital DSR",
+        "Esocos-DSR",
+        "Calcos-60K",
+        "Calcos 60K D3",
+        "CALCOS ACTIVE",
+        "Calcos-C",
+        "Calcos-GOLD",
+        "Coseve 500/1000",
+        "Cefucos 250/500",
+        "Linzotal 100/600",
+        "LORI-P",
+        "Orthocos",
+        "Kanil-DT",
         "Bestocid-O"
       ]
     },
@@ -164,7 +161,11 @@
       "specialties": [],
       "products": [
         "Rabital DSR",
-        "Nemutal Plus"
+        "Nemutal Plus",
+        "Provimax DHA",
+        "CoCef CV",
+        "Lactoco",
+        "Preminac SP"
       ]
     }
   ]
