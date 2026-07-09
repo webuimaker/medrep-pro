@@ -56,6 +56,33 @@
       "specialty": "General Physician"
     },
     {
+      "products": [
+        "Extranac",
+        "Defcos",
+        "Rabital DSR",
+        "Rabital-L",
+        "Calcos 60K D3",
+        "CALCOS ACTIVE",
+        "Calcos-C",
+        "Calcos-GOLD",
+        "Cefucos 250/500",
+        "CoCef CV",
+        "COLACT",
+        "Coseve 500/1000",
+        "Linzotal 100/600",
+        "LORI-P",
+        "Esocos-DSR"
+      ],
+      "city": "Gaya",
+      "name": "Dr. D.P. Yadav",
+      "qualification": "GP",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "general",
+      "hospital": "SherGhati",
+      "specialty": "General Physician"
+    },
+    {
       "notes": "",
       "mobile": "",
       "clinic": "",
