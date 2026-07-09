@@ -364,7 +364,7 @@
       ]
     },
     {
-      "name": "Amlotl",
+      "name": "Amlotal",
       "molecule": "Amlodipine Tablets",
       "image": "images/uploads/general-amlotl.jpg",
       "assignedDoctors": [],
@@ -553,7 +553,7 @@
       ]
     },
     {
-      "name": "Oflcs",
+      "name": "Oflocos",
       "molecule": "Ofloxacin Eye/Ear Drops",
       "image": "images/uploads/eye-oflcs.jpg",
       "assignedDoctors": [],
@@ -564,7 +564,7 @@
       ]
     },
     {
-      "name": "Otocs",
+      "name": "Otocos",
       "molecule": "Ofloxacin + Lignocaine Ear Drops",
       "image": "images/uploads/eye-otocs.jpg",
       "assignedDoctors": [],
