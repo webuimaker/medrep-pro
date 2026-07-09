@@ -85,6 +85,26 @@
       "specialty": "General Physician"
     },
     {
+      "products": [
+        "COSLIV",
+        "COCEF-AZ-LB",
+        "Oflocos-MS",
+        "Rabital-L",
+        "BILACOS",
+        "Rifacos 200/400",
+        "Etocos-TH",
+        "Bestocid-O"
+      ],
+      "city": "Sherghati",
+      "name": "Dr. P.K. Kundu",
+      "qualification": "Physician | MBBS,MD",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "general",
+      "hospital": "Kundu Poly Clinic",
+      "specialty": "General Physician"
+    },
+    {
       "notes": "",
       "mobile": "",
       "clinic": "",
@@ -251,24 +271,6 @@
       "hospital": "Neuro Care Centre",
       "email": "",
       "specialty": "Neurology"
-    },
-    {
-      "status": "Active",
-      "name": "Dr. P.K. Kundu",
-      "qualification": "Physician | MBBS,MD",
-      "specialty": "General Physician",
-      "city": "Sherghati",
-      "state": "Bihar",
-      "products": [
-        "COSLIV",
-        "COCEF-AZ-LB",
-        "Oflocos-MS",
-        "Rabital-L",
-        "BILACOS",
-        "Rifacos 200/400",
-        "Etocos-TH",
-        "Bestocid-O"
-      ]
     }
   ]
 }
