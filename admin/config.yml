@@ -163,7 +163,7 @@ collections:
                 required: false
                 hint: "Add every product that belongs in this category's tab, in the exact order you want them to appear — the same product can also appear in other categories with a different order there"
                 field:
-                  label: "Product"
+                  label: "products.*.name"
                   name: "product"
                   widget: "relation"
                   collection: "products"
