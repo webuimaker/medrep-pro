@@ -2,7 +2,12 @@
   "doctors": [
     {
       "products": [
-        "Calcos-60K",
+        [
+          "Tripcos-D",
+          "Etocos-TH",
+          "Rabital DSR",
+          "Defcos"
+        ],
         "Calcos 60K D3",
         "CALCOS ACTIVE",
         "Calcos-C",
