@@ -553,19 +553,6 @@
       ]
     },
     {
-      "name": "oflcos",
-      "molecule": "Ofloxacin Eye/Ear Drops",
-      "image": "images/uploads/eye-oflcs.jpg",
-      "assignedDoctors": [
-        "Dr. D.P. Yadav"
-      ],
-      "materialsCount": 1,
-      "status": "Active",
-      "categories": [
-        "eye"
-      ]
-    },
-    {
       "name": "Otocs",
       "molecule": "Ofloxacin + Lignocaine Ear Drops",
       "image": "images/uploads/eye-otocs.jpg",
@@ -763,6 +750,13 @@
       "categories": [
         "extra"
       ]
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "oflcos2 ",
+      "molecule": "Ofloxacin Eye/Ear Drop",
+      "image": "/images/uploads/eye-oflcs.jpg"
     }
   ]
 }
