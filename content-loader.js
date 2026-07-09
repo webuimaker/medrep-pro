@@ -62,6 +62,15 @@ async function loadContent() {
 
   // ── META (categories + their products) ──────────────────
   // App shape: META[catId] = {id, title, color, bg, icon, specialties, products:[{name, molecule, image}]}
+  // Order and membership now both live on the category side (each
+  // category stores its own ordered list of product names, editable by
+  // dragging in /admin) — so the same product can appear 1st under one
+  // category and 3rd under another.
+  const productsByName = {};
+  productsData.products
+    .filter(p => p.status !== 'Inactive')
+    .forEach(p => { productsByName[p.name] = p; });
+
   const META = {};
   categoriesData.categories.forEach(cat => {
     META[cat.id] = {
@@ -71,31 +80,18 @@ async function loadContent() {
       bg: cat.bg,
       icon: cat.icon,
       specialties: cat.specialties || [],
-      products: [],
-    };
-  });
-
-  productsData.products
-    .filter(p => p.status !== 'Inactive')
-    .forEach(p => {
-      // Products can now belong to more than one category. Accept the new
-      // `categories` array, but fall back to the old single `category`
-      // string for any entry that hasn't been migrated yet.
-      const catIds = Array.isArray(p.categories) && p.categories.length
-        ? p.categories
-        : (p.category ? [p.category] : []);
-
-      catIds.forEach(catId => {
-        if (!META[catId]) return; // category was deleted/renamed — skip safely
-        META[catId].products.push({
+      products: (cat.products || [])
+        .map(name => productsByName[name])
+        .filter(Boolean) // skips any name that's been renamed/deleted/deactivated
+        .map(p => ({
           name: p.name,
           molecule: p.molecule,
           image: p.image && p.image.length ? p.image : 'images/placeholder-product.png',
           assignedDoctors: p.assignedDoctors || [],
           materialsCount: p.materialsCount || 1,
-        });
-      });
-    });
+        })),
+    };
+  });
 
   // ── SETTINGS (cover / thank-you slides) ──────────────────
   const SETTINGS = {

@@ -105,17 +105,6 @@ collections:
             summary: "{{fields.name}}"
             fields:
               - { label: "Product Name",  name: "name",     widget: "string" }  
-              - label: "Assigned Categories"
-                name: "categories"
-                widget: "relation"
-                collection: "categories"
-                file: "categories"
-                search_fields: ["categories.*.title"]
-                display_fields: ["categories.*.title"]
-                value_field: "categories.*.id"
-                multiple: true
-                required: false
-                hint: "Select every catalogue tab this product should appear under — a product can belong to more than one"
               - { label: "Composition",   name: "molecule", widget: "string" }
               - label: "Product Image"
                 name: "image"
@@ -168,6 +157,20 @@ collections:
                 name: "specialties"
                 widget: "list"
                 field: { label: "Specialty", name: "specialty", widget: "string" }
+              - label: "Products in this category (drag ≡ to set display order)"
+                name: "products"
+                widget: "list"
+                required: false
+                hint: "Add every product that belongs in this category's tab, in the exact order you want them to appear — the same product can also appear in other categories with a different order there"
+                field:
+                  label: "Product"
+                  name: "product"
+                  widget: "relation"
+                  collection: "products"
+                  file: "products"
+                  search_fields: ["products.*.name"]
+                  display_fields: ["products.*.name"]
+                  value_field: "products.*.name"
 
   # ──────────────────────────────────────────────
   # 4) APP SETTINGS — cover & thank-you slides shown at the start/end of

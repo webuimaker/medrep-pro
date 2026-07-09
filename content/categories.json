@@ -5,11 +5,37 @@
       "title": "Ortho",
       "color": "#E85D26",
       "bg": "#FFF3EE",
-      "icon": "🦴",
+      "icon": "\ud83e\uddb4",
       "specialties": [
         "Orthopaedics",
         "Physician",
         "Neurology"
+      ],
+      "products": [
+        "CALCOS ACTIVE",
+        "Esocos-DSR",
+        "NeuroGlow-GB",
+        "Calcos-60K",
+        "Calcos 60K D3",
+        "Calcos-C",
+        "Calcos-GOLD",
+        "Cefucos 250/500",
+        "CoCef CV",
+        "Coseve 500/1000",
+        "Extranac",
+        "Linzotal 100/600",
+        "LORI-P",
+        "Rabital-L",
+        "Defcos",
+        "Etocos-TH",
+        "Lactoco",
+        "Preminac SP",
+        "Provimax DHA",
+        "Orthocos",
+        "Kanil-DT",
+        "Neurogrow Plus",
+        "Tripcos-D",
+        "Bestocid-O"
       ]
     },
     {
@@ -17,12 +43,53 @@
       "title": "Physician / GP",
       "color": "#1B7FC4",
       "bg": "#EBF5FF",
-      "icon": "💊",
+      "icon": "\ud83d\udc8a",
       "specialties": [
         "General Physician",
         "Gastroenterology",
         "Paediatrics",
         "Gynaecology"
+      ],
+      "products": [
+        "BILACOS",
+        "COLACT",
+        "COSRIDE M1/M2",
+        "Cotel-THA",
+        "DAPZIN-10",
+        "Drocos-MF",
+        "Esocos-DSR",
+        "FexCos-M",
+        "Lactoco-L",
+        "NeuroGlow-GB",
+        "Rifacos 200/400",
+        "Rosucos Gold 20",
+        "Vosco",
+        "BronCos-LS",
+        "Extranac",
+        "Rabital-L",
+        "Etocos-TH",
+        "Amlotl",
+        "Artcos SL / Artcos",
+        "Cotlth",
+        "Cycltx",
+        "Extrnct",
+        "Fexcos M",
+        "Kacym",
+        "Kanld",
+        "Mefcos",
+        "P-COLD",
+        "Roxycs",
+        "Usrocs",
+        "CosClav",
+        "Lycocos Plus",
+        "Neurogrow Plus",
+        "Bestocid-O",
+        "Cosliv Capsules",
+        "Ursocos 300",
+        "Cos4G",
+        "COCEF-AZ-LB",
+        "Cocef-O 200",
+        "Vitocos Gold"
       ]
     },
     {
@@ -30,41 +97,75 @@
       "title": "ENT",
       "color": "#7B2FBE",
       "bg": "#F5EEFF",
-      "icon": "👁️",
+      "icon": "\ud83d\udc41\ufe0f",
       "specialties": [
         "Ophthalmology",
         "ENT",
         "Dentistry",
         "Dermatology"
+      ],
+      "products": [
+        "Arofil",
+        "Clobgm",
+        "Itchic",
+        "Povics",
+        "Oflcs",
+        "Otocs"
       ]
     },
     {
       "color": "#03a9f4",
       "bg": "#6dd0ff",
-      "icon": "👶",
+      "icon": "\ud83d\udc76",
       "id": "paediatrics",
       "title": "Paediatrics",
       "specialties": [
         "Child"
+      ],
+      "products": [
+        "BronCos-LS",
+        "Calcos 60K D3",
+        "Extranac",
+        "Mefcos",
+        "P-COLD",
+        "CosClav",
+        "Oflocos-MS",
+        "RACTAL J",
+        "COSLIV",
+        "CYPROCOS",
+        "Extrazyme",
+        "Lycocos Plus"
       ]
     },
     {
       "color": "#0D9488",
       "bg": "#E6FFFA",
-      "icon": "🦷",
+      "icon": "\ud83e\uddb7",
       "id": "Dental",
       "title": "Dentistry",
       "specialties": [
         "Child"
+      ],
+      "products": [
+        "Extranac",
+        "Etocos-TH",
+        "Preminac SP",
+        "CosClav",
+        "Kanil-DT",
+        "Tripcos-D"
       ]
     },
-   {
-    "id": "Extra",
-    "title": "Extra",
-    "color": "#6B7280",
-    "bg": "#F3F4F6",
-    "icon": "📦",
-    "specialties": []
-  }
+    {
+      "id": "Extra",
+      "title": "Extra",
+      "color": "#6B7280",
+      "bg": "#F3F4F6",
+      "icon": "\ud83d\udce6",
+      "specialties": [],
+      "products": [
+        "Rabital DSR",
+        "Nemutal Plus"
+      ]
+    }
   ]
 }
