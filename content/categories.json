@@ -65,8 +65,6 @@
         "Extranac",
         "Rabital-L",
         "Etocos-TH",
-        "Amlotl",
-        "Artcos SL / Artcos",
         "Cotlth",
         "Cycltx",
         "Extrnct",
@@ -121,13 +119,13 @@
       ],
       "products": [
         "BronCos-LS",
-        "Calcos 60K D3",
         "Extranac",
-        "Mefcos",
-        "P-COLD",
-        "CosClav",
-        "Oflocos-MS",
         "RACTAL J",
+        "Oflocos-MS",
+        "Calcos 60K D3",
+        "Mefcos",
+        "CosClav",
+        "P-COLD",
         "COSLIV",
         "CYPROCOS",
         "Extrazyme",
@@ -165,7 +163,9 @@
         "Provimax DHA",
         "CoCef CV",
         "Lactoco",
-        "Preminac SP"
+        "Preminac SP",
+        "Amlotl",
+        "Artcos SL / Artcos"
       ]
     }
   ]
