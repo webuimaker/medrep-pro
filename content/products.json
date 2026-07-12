@@ -754,7 +754,7 @@
     {
       "name": "Methisa",
       "molecule": "Methlyprednisolone",
-      "image": "images/uploads/methisa.jpg",
+      "image": "/images/uploads/methisa.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
       "status": "Active",
