@@ -755,7 +755,9 @@
       "name": "Methisa",
       "molecule": "Methlyprednisolone",
       "image": "/images/uploads/methisa.jpg",
-      "assignedDoctors": [],
+      "assignedDoctors": [
+        "Dr. Arvind Kumar"
+      ],
       "materialsCount": 1,
       "status": "Active",
       "categories": [
