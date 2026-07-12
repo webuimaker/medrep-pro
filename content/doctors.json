@@ -105,6 +105,31 @@
       "specialty": "General Physician"
     },
     {
+      "products": [
+        "Calcos-60K",
+        "CALCOS ACTIVE",
+        "Calcos-GOLD",
+        "Cefucos 250/500",
+        "Linzotal 100/600",
+        "Coseve 500/1000",
+        "Defcos",
+        "Methisa",
+        "Etocos-TH",
+        "LORI-P",
+        "NeuroGlow-GB",
+        "Rabital-L",
+        "Tripcos-D"
+      ],
+      "city": "Barachatti",
+      "name": "Dr. Arvind Kumar",
+      "qualification": "Orthopedic",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "general",
+      "hospital": "",
+      "specialty": "Orthopaedics"
+    },
+    {
       "notes": "",
       "mobile": "",
       "clinic": "",

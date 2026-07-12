@@ -752,6 +752,17 @@
       ]
     },
     {
+      "name": "Methisa",
+      "molecule": "Nimesulide 100 mg + Paracetamol 325 mg Tablets",
+      "image": "images/uploads/methisa.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active",
+      "categories": [
+        "extra"
+      ]
+    },
+    {
       "materialsCount": 0,
       "status": "Active",
       "name": "Oflocos",
