@@ -264,6 +264,25 @@
       "catalog": "Paediatrics",
       "hospital": "Rafiganj",
       "specialty": "Paediatrics"
-    }                                           
+    },        
+    {
+      "products": [        
+        "BILACOS",
+        "AZICOS 250 / 500",
+        "Cosliv Capsules",
+        "COSLIV",
+        "Rabital-L", 
+        "Etocos-TH",
+        "BronCos-LS"
+      ],
+      "city": "Rafiganj",
+      "name": "Dr. Durga Prasad",
+      "qualification": "general",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "general",
+      "hospital": "Rafiganj",
+      "specialty": "general"
+    }                                                         
   ]
 }
