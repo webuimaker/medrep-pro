@@ -787,6 +787,13 @@
       "name": "CALCOS-K27",
       "molecule": "Calcium Citrate Malate 1000 mg, Vitamin K2-7 50 mcg, Zinc 15 mg, Magnesium Oxide 50 mg, Vitamin D3 1000 IU",
       "image": "/images/uploads/calcos-k27.jpg"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "PIRICOS-40 Injection",
+      "molecule": "Piroxicam 40 mg Injection",
+      "image": "/images/uploads/piricos-40.jpg"
     }
   ]
 }
