@@ -753,9 +753,11 @@
     },
     {
       "name": "Methisa",
-      "molecule": "Nimesulide 100 mg + Paracetamol 325 mg Tablets",
-      "image": "images/uploads/methisa.jpg",
-      "assignedDoctors": [],
+      "molecule": "Methlyprednisolone",
+      "image": "/images/uploads/methisa.jpg",
+      "assignedDoctors": [
+        "Dr. Arvind Kumar"
+      ],
       "materialsCount": 1,
       "status": "Active",
       "categories": [
