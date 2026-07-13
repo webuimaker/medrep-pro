@@ -129,6 +129,36 @@
       "catalog": "general",
       "hospital": "",
       "specialty": "Orthopaedics"
-    }    
+    },
+    {
+      "products": [
+        "Bestocid-O",
+        "Calcos-60K",
+        "CALCOS ACTIVE",
+        "Calcos-GOLD",        
+        "Calcos 60K D3",
+        "COLACT",
+        "Defcos",
+        "Rabital DSR",
+        "Rabital-L",
+        "Linzotal 100/600",
+        "LORI-P",
+        "Methisa",
+        "NeuroGlow-GB",
+        "Neurogrow Plus",
+        "Coseve 500/1000",
+        "Orthocos",
+        "PREMINAC-75 Injection",
+        "Tripcos-D"
+      ],
+      "city": "Barachatti",
+      "name": "Dr. Bablu Kumar",
+      "qualification": "Orthopedic",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "general",
+      "hospital": "",
+      "specialty": "Orthopaedics"
+    }        
   ]
 }
