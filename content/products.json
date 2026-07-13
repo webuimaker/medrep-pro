@@ -801,6 +801,13 @@
       "name": "AZICOS 250 / 500",
       "molecule": "Azithromycin 250 mg / 500 mg",
       "image": "/images/uploads/azicos.jpg"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "PREMICEF-O",
+      "molecule": "Cefpodoxime Proxetil 200 mg, Ofloxacin 200 mg",
+      "image": "/images/uploads/premicef-o.jpg"
     }
   ]
 }
