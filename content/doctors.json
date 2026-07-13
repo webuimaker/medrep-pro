@@ -243,6 +243,27 @@
       "catalog": "general",
       "hospital": "BodhGaya",
       "specialty": "general"
-    }                                   
+    },       
+    {
+      "products": [
+        "AZICOS 250 / 500",
+        "BILACOS",
+        "CosClav", 
+        "Cefucos 250/500",
+        "COSLIV",
+        "Etocos-TH",
+        "Lycocos Plus",
+        "PREMICEF-O",
+        "VTOCOS-Z Syrup"
+      ],
+      "city": "Rafiganj",
+      "name": "Dr. M. Ahamad",
+      "qualification": "Paediatrics",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "Paediatrics",
+      "hospital": "Rafiganj",
+      "specialty": "Paediatrics"
+    }                                           
   ]
 }
