@@ -118,6 +118,7 @@
         "LORI-P",
         "NeuroGlow-GB",
         "Rabital-L",
+        "PREMINAC-75 Injection",
         "Tripcos-D"
       ],
       "city": "Barachatti",
@@ -128,7 +129,6 @@
       "catalog": "general",
       "hospital": "",
       "specialty": "Orthopaedics"
-    }
-    
+    }    
   ]
 }
