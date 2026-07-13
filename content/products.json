@@ -761,7 +761,7 @@
       "materialsCount": 1,
       "status": "Active",
       "categories": [
-        "Ortho"
+        "extra"
       ]
     },
     {
@@ -770,6 +770,16 @@
       "name": "Oflocos",
       "molecule": "Ofloxacin Eye/Ear Drop",
       "image": "/images/uploads/eye-oflcs.jpg"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "PREMINAC-75 Injection",
+      "molecule": "Diclofenac Sodium Injection IP 75 mg/ml",
+      "image": "/images/uploads/preminac-75.jpg",
+      "assignedDoctors": [
+        "Dr. Arvind Kumar"
+      ]
     }
   ]
 }
