@@ -794,6 +794,13 @@
       "name": "PIRICOS-40 Injection",
       "molecule": "Piroxicam 40 mg Injection",
       "image": "/images/uploads/piricos-40.jpg"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "AZICOS 250 / 500",
+      "molecule": "Azithromycin 250 mg / 500 mg",
+      "image": "/images/uploads/azicos.jpg"
     }
   ]
 }
