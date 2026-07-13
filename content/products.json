@@ -808,6 +808,13 @@
       "name": "PREMICEF-O",
       "molecule": "Cefpodoxime Proxetil 200 mg, Ofloxacin 200 mg",
       "image": "/images/uploads/premicef-o.jpg"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "VTOCOS-Z Syrup",
+      "molecule": "Iron (Ferric Ammonium Citrate), Multivitamins(Thiamine (B1), Riboflavin (B2), Pyridoxine (B6), Cyanocobalamin (B12), Niacinamide, D-Panthenol) and Minerals",
+      "image": "/images/uploads/vitocos-z.jpg"
     }
   ]
 }
