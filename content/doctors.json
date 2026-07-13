@@ -190,6 +190,31 @@
       "catalog": "general",
       "hospital": "",
       "specialty": "Orthopaedics"
-    }                
+    },    
+    {
+      "products": [
+        "Bestocid-O",
+        "Calcos-60K",
+        "CALCOS ACTIVE",
+        "Calcos-GOLD",  
+        "COLACT",   
+        "Rabital DSR",
+        "Rabital-L",
+        "Linzotal 100/600",
+        "LORI-P",
+        "Methisa",
+        "Coseve 500/1000",        
+        "PREMINAC-75 Injection",
+        "Tripcos-D"
+      ],
+      "city": "Barachatti",
+      "name": "Dr. Subodh Kumar",
+      "qualification": "Orthopedic",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "general",
+      "hospital": "",
+      "specialty": "Orthopaedics"
+    }                  
   ]
 }
