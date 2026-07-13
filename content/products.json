@@ -794,6 +794,27 @@
       "name": "PIRICOS-40 Injection",
       "molecule": "Piroxicam 40 mg Injection",
       "image": "/images/uploads/piricos-40.jpg"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "AZICOS 250 / 500",
+      "molecule": "Azithromycin 250 mg / 500 mg",
+      "image": "/images/uploads/azicos.jpg"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "PREMICEF-O",
+      "molecule": "Cefpodoxime Proxetil 200 mg, Ofloxacin 200 mg",
+      "image": "/images/uploads/premicef-o.jpg"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "VTOCOS-Z Syrup",
+      "molecule": "Iron (Ferric Ammonium Citrate), Multivitamins(Thiamine (B1), Riboflavin (B2), Pyridoxine (B6), Cyanocobalamin (B12), Niacinamide, D-Panthenol) and Minerals",
+      "image": "/images/uploads/vitocos-z.jpg"
     }
   ]
 }
