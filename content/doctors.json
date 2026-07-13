@@ -283,6 +283,32 @@
       "catalog": "general",
       "hospital": "Rafiganj",
       "specialty": "general"
-    }                                                         
+    },       
+    {
+      "products": [  
+        "BronCos-LS",              
+        "BILACOS",
+        "Calcos-60K",
+        "Cos4G",
+        "COSLIV",
+        "CYPROCOS",
+        "Drocos-MF",
+        "Rabital DSR",
+        "Rabital-L", 
+        "fericas",
+        "FexCos-M",
+        "LORI-P",
+        "NeuroGlow-GB",
+        "Rifacos 200/400"
+      ],
+      "city": "Rafiganj",
+      "name": "Dr. R.P. Singh",
+      "qualification": "general",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "general",
+      "hospital": "Rafiganj",
+      "specialty": "general"
+    }                                                                     
   ]
 }
