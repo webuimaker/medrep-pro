@@ -215,6 +215,33 @@
       "catalog": "general",
       "hospital": "",
       "specialty": "Orthopaedics"
-    }                  
+    },       
+    {
+      "products": [
+        "Bestocid-O",
+        "BILACOS",
+        "BronCos-LS",
+        "Calcos-60K",
+        "CALCOS ACTIVE",
+        "Calcos-GOLD", 
+        "CosClav", 
+        "COSLIV",
+        "Drocos-MF",
+        "FexCos-M",
+        "Lactoco-L",
+        "Lycocos Plus",
+        "NeuroGlow-GB",
+        "RACTAL J",
+        "Rifacos 200/400"
+      ],
+      "city": "BodhGaya",
+      "name": "Dr. Manoj Kumar",
+      "qualification": "general",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "general",
+      "hospital": "",
+      "specialty": "general"
+    }                                   
   ]
 }
