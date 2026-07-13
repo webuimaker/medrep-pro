@@ -257,11 +257,11 @@
         "VTOCOS-Z Syrup"
       ],
       "city": "Rafiganj",
-      "name": "Dr. Md Ahamad",
+      "name": "Dr. M. Ahamad",
       "qualification": "Paediatrics",
       "state": "Bihar",
       "status": "Active",
-      "catalog": "Paediatrics",
+      "catalog": "paediatrics",
       "hospital": "Rafiganj",
       "specialty": "Paediatrics"
     },        
