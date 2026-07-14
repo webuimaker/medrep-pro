@@ -829,6 +829,13 @@
       "name": "COSTUS Syrup",
       "molecule": "Ambroxol 15 mg, Terbutaline 1.25 mg, Guaiphenesin 50 mg, Menthol 1 mg",
       "image": "/images/uploads/costus-syp.jpg"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "OFLOCOS-OZ",
+      "molecule": "Ofloxacin 200 mg, Ornidazole 500 mg",
+      "image": "/images/uploads/oflocos-oz.jpg"
     }
   ]
 }
