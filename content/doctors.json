@@ -331,6 +331,50 @@
       "catalog": "general",
       "hospital": "Rafiganj",
       "specialty": "general"
-    }                                                                                           
+    },     
+    {
+      "products": [  
+        "Tripcos-D",
+        "Rabital-L",
+        "NeuroGlow-GB",
+        "Extrazyme",
+        "Calcos 60K D3",
+        "Esocos-DSR",
+        "Drocos-MF",
+        "Clobgm",
+        "BronCos-LS",
+        "AZICOS 250 / 500"
+      ],
+      "city": "Rafiganj",
+      "name": "Dr. M.R. Astraf",
+      "qualification": "general",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "general",
+      "hospital": "Rafiganj",
+      "specialty": "general"
+    },       
+    {
+      "products": [  
+        "Calcos 60K D3",
+        "Clobgm",
+        "CosClav",
+        "CYPROCOS",
+        "P-COLD",
+        "Drocos-MF",
+        "Extrazyme",
+        "Oflocos",
+        "Tripcos-D",
+        "VTOCOS-Z Syrup"
+      ],
+      "city": "Rafiganj",
+      "name": "Dr. Ather Parwaz",
+      "qualification": "general",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "general",
+      "hospital": "Rafiganj",
+      "specialty": "general"
+    }                                                                                                                            
   ]
 }
