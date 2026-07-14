@@ -377,6 +377,47 @@
       "catalog": "general",
       "hospital": "Rafiganj",
       "specialty": "general"
-    }                                                                                                                            
+    },      
+    {
+      "products": [  
+        "BILACOS",
+        "Rifacos 200/400",
+        "BronCos-LS",
+        "Calcos-60K",
+        "Cefucos 250/500",
+        "COLACT",
+        "Rabital-L",
+        "FexCos-M",
+        "Tripcos-D"
+      ],
+      "city": "Rafiganj",
+      "name": "Dr. Binod kr. Singh",
+      "qualification": "general",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "general",
+      "hospital": "Rafiganj",
+      "specialty": "general"
+    },         
+    {
+      "products": [  
+        "AZICOS 250 / 500",
+        "Calcos-60K",
+        "Calcos 60K D3",
+        "COLACT",
+        "COSLIV",
+        "CYPROCOS",
+        "Mefcos",
+        "PREMICEF-O"
+      ],
+      "city": "Rafiganj",
+      "name": "Dr. Ejaj Ahamad",
+      "qualification": "general",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "general",
+      "hospital": "Rafiganj",
+      "specialty": "general"
+    }                                                                                                                                              
   ]
 }
