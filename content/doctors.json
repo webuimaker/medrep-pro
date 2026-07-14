@@ -309,6 +309,26 @@
       "catalog": "general",
       "hospital": "Rafiganj",
       "specialty": "general"
-    }                                                                     
+    },      
+    {
+      "products": [  
+        "Bestocid-O",            
+        "BILACOS",
+        "Calcos 60K D3",
+        "Clobgm",
+        "COSLIV",
+        "CYPROCOS",
+        "Extrazyme",
+        "Neurogrow Plus"
+      ],
+      "city": "Rafiganj",
+      "name": "Dr. Bhola Prasad",
+      "qualification": "general",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "general",
+      "hospital": "Rafiganj",
+      "specialty": "general"
+    }                                                                                           
   ]
 }
