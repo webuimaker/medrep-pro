@@ -109,7 +109,7 @@
         "Linzotal 100/600",
         "Coseve 500/1000",
         "Defcos",
-        "Methisa",        
+        "Methisa",
         "Extranac",
         "LORI-P",
         "NeuroGlow-GB",
@@ -131,7 +131,7 @@
         "Bestocid-O",
         "Calcos-60K",
         "CALCOS ACTIVE",
-        "Calcos-GOLD",        
+        "Calcos-GOLD",
         "Calcos 60K D3",
         "COLACT",
         "Defcos",
@@ -161,7 +161,7 @@
         "Bestocid-O",
         "Calcos-60K",
         "CALCOS ACTIVE",
-        "Calcos-GOLD",        
+        "Calcos-GOLD",
         "Calcos 60K D3",
         "CALCOS-K27",
         "CoCef CV",
@@ -186,20 +186,20 @@
       "catalog": "general",
       "hospital": "Barachatti",
       "specialty": "Orthopaedics"
-    },    
+    },
     {
       "products": [
         "Bestocid-O",
         "Calcos-60K",
         "CALCOS ACTIVE",
-        "Calcos-GOLD",  
-        "COLACT",   
+        "Calcos-GOLD",
+        "COLACT",
         "Rabital DSR",
         "Rabital-L",
         "Linzotal 100/600",
         "LORI-P",
         "Methisa",
-        "Coseve 500/1000",        
+        "Coseve 500/1000",
         "PREMINAC-75 Injection",
         "Tripcos-D"
       ],
@@ -211,7 +211,7 @@
       "catalog": "general",
       "hospital": "Dobhi",
       "specialty": "Orthopaedics"
-    },       
+    },
     {
       "products": [
         "Bestocid-O",
@@ -219,8 +219,8 @@
         "BronCos-LS",
         "Calcos-60K",
         "CALCOS ACTIVE",
-        "Calcos-GOLD", 
-        "CosClav", 
+        "Calcos-GOLD",
+        "CosClav",
         "COSLIV",
         "Drocos-MF",
         "FexCos-M",
@@ -238,12 +238,12 @@
       "catalog": "general",
       "hospital": "BodhGaya",
       "specialty": "general"
-    },       
+    },
     {
       "products": [
         "AZICOS 250 / 500",
         "BILACOS",
-        "CosClav", 
+        "CosClav",
         "Cefucos 250/500",
         "COSLIV",
         "Etocos-TH",
@@ -259,14 +259,14 @@
       "catalog": "paediatrics",
       "hospital": "Rafiganj",
       "specialty": "Paediatrics"
-    },        
+    },
     {
-      "products": [        
+      "products": [
         "BILACOS",
         "AZICOS 250 / 500",
         "Cosliv Capsules",
         "COSLIV",
-        "Rabital-L", 
+        "Rabital-L",
         "Etocos-TH",
         "BronCos-LS"
       ],
@@ -278,10 +278,10 @@
       "catalog": "general",
       "hospital": "Rafiganj",
       "specialty": "general"
-    },       
+    },
     {
-      "products": [  
-        "BronCos-LS",              
+      "products": [
+        "BronCos-LS",
         "BILACOS",
         "Calcos-60K",
         "Cos4G",
@@ -289,7 +289,7 @@
         "CYPROCOS",
         "Drocos-MF",
         "Rabital DSR",
-        "Rabital-L", 
+        "Rabital-L",
         "FERICOS-XT",
         "FexCos-M",
         "LORI-P",
@@ -304,10 +304,10 @@
       "catalog": "general",
       "hospital": "Rafiganj",
       "specialty": "general"
-    },      
+    },
     {
-      "products": [  
-        "Bestocid-O",            
+      "products": [
+        "Bestocid-O",
         "BILACOS",
         "Calcos 60K D3",
         "Clobgm",
@@ -325,9 +325,9 @@
       "catalog": "general",
       "hospital": "Rafiganj",
       "specialty": "general"
-    },     
+    },
     {
-      "products": [  
+      "products": [
         "Tripcos-D",
         "Rabital-L",
         "NeuroGlow-GB",
@@ -347,9 +347,9 @@
       "catalog": "general",
       "hospital": "Rafiganj",
       "specialty": "general"
-    },       
+    },
     {
-      "products": [  
+      "products": [
         "Calcos 60K D3",
         "Clobgm",
         "CosClav",
@@ -371,9 +371,9 @@
       "catalog": "general",
       "hospital": "Rafiganj",
       "specialty": "general"
-    },      
+    },
     {
-      "products": [  
+      "products": [
         "BILACOS",
         "Rifacos 200/400",
         "BronCos-LS",
@@ -392,9 +392,9 @@
       "catalog": "general",
       "hospital": "Rafiganj",
       "specialty": "general"
-    },         
+    },
     {
-      "products": [  
+      "products": [
         "AZICOS 250 / 500",
         "Calcos-60K",
         "Calcos 60K D3",
@@ -412,9 +412,9 @@
       "catalog": "general",
       "hospital": "Rafiganj",
       "specialty": "general"
-    },        
+    },
     {
-      "products": [  
+      "products": [
         "Calcos 60K D3",
         "BILACOS",
         "FexCos-M",
@@ -433,13 +433,13 @@
       "catalog": "general",
       "hospital": "Delha, Gaya",
       "specialty": "general"
-    },      
+    },
     {
       "products": [
         "Etocos-TH",
         "Extranac",
         "Defcos",
-        "Calcos-60K", 
+        "Calcos-60K",
         "Calcos 60K D3",
         "NeuroGlow-GB",
         "Nemutal Plus",
@@ -455,7 +455,7 @@
       "catalog": "ortho",
       "hospital": "Police Line, Gaya",
       "specialty": "Orthopaedics"
-    },          
+    },
     {
       "products": [
         "BronCos-LS",
@@ -473,6 +473,23 @@
       "catalog": "paediatrics",
       "hospital": "Police Line Gaya",
       "specialty": "Paediatrics"
-    }                                                                                                                                                                                       
+    },
+    {
+      "products": [
+        "Etocos-TH",
+        "Extranac",
+        "Tripcos-D",
+        "Rabital DSR",
+        "Rabital-L"
+      ],
+      "city": "Gaya",
+      "name": "Dr. Sandeep  Prakash",
+      "qualification": "Dentist",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "Dental",
+      "hospital": "AP colony, Gaya",
+      "specialty": "Dentistry"
+    }
   ]
 }
