@@ -29,22 +29,17 @@
     },
     {
       "products": [
-        "Amlotal",
-        "ATROCOS",
         "BILACOS",
         "CALCOS ACTIVE",
         "COLACT",
         "COSRIDE M1/M2",
-        "Cotel-THA",
-        "DAPZIN-10",
+        "Calcos-60K",
         "Drocos-MF",
         "Esocos-DSR",
         "FexCos-M",
         "Lactoco-L",
         "NeuroGlow-GB",
-        "Rifacos 200/400",
-        "Rosucos Gold 20",
-        "Vosco"
+        "Rifacos 200/400"
       ],
       "city": "Gaya",
       "name": "Dr. Kumar Gautam",
@@ -417,6 +412,67 @@
       "catalog": "general",
       "hospital": "Rafiganj",
       "specialty": "general"
-    }                                                                                                                                              
+    },        
+    {
+      "products": [  
+        "Calcos 60K D3",
+        "BILACOS",
+        "FexCos-M",
+        "Drocos-MF",
+        "Rabital-L",
+        "BronCos-LS",
+        "Etocos-TH",
+        "Cosliv Capsules",
+        "COSLIV"
+      ],
+      "city": "Delha",
+      "name": "Dr. Ajay Kr. Singh",
+      "qualification": "general",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "general",
+      "hospital": "Delha, Gaya",
+      "specialty": "general"
+    },      
+    {
+      "products": [
+        "Etocos-TH",
+        "Extranac",
+        "Defcos",
+        "Calcos-60K", 
+        "Calcos 60K D3",
+        "NeuroGlow-GB",
+        "Nemutal Plus",
+        "Tripcos-D",
+        "Rabital DSR",
+        "Rabital-L"
+      ],
+      "city": "Police Line",
+      "name": "Dr. Shivendra Kr.",
+      "qualification": "Orthopedic & Trauma Center",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "orthopaedics",
+      "hospital": "Police Line, Gaya",
+      "specialty": "Orthopaedics"
+    },          
+    {
+      "products": [
+        "BronCos-LS",
+        "RACTAL J",
+        "COSLIV",
+        "Oflocos-MS",
+        "CosClav",
+        "P-COLD"
+      ],
+      "city": "Police Line Gaya",
+      "name": "Dr.Umesh Kr.",
+      "qualification": "Paediatrics",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "paediatrics",
+      "hospital": "Police Line Gaya",
+      "specialty": "Paediatrics"
+    },                                                                                                                                                                                           
   ]
 }
