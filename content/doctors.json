@@ -490,6 +490,29 @@
       "catalog": "Dental",
       "hospital": "AP colony, Gaya",
       "specialty": "Dentistry"
+    },
+    {
+      "products": [
+        "Calcos-60K",
+        "CALCOS ACTIVE",
+        "Calcos-GOLD",
+        "CosClav",
+        "CALCOS-K27",
+        "Drocos-MF",
+        "Extrnct",
+        "FERICOS-XT",
+        "NeuroGlow-GB",
+        "Rabital-L",
+        "Rabital-L"
+      ],
+      "city": "Gaya ",
+      "name": "Dr. Kusum Singh",
+      "qualification": "Gyne",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "Extra",
+      "hospital": "Delha Gaya ",
+      "specialty": "Gynaecology"
     }
   ]
 }
