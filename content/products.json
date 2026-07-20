@@ -263,7 +263,7 @@
     {
       "name": "Extranac Suspensions",
       "molecule": "Ibuprofen 100 mg + Paracetamol 162.5 mg",
-      "image": "images/uploads/extranac-suspensions.jpg",
+      "image": "/images/uploads/extranac-suspensions.png",
       "assignedDoctors": [],
       "materialsCount": 1,
       "status": "Active",
