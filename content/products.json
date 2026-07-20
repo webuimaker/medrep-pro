@@ -261,6 +261,20 @@
       ]
     },
     {
+      "name": "Extranac Suspensions",
+      "molecule": "Ibuprofen 100 mg + Paracetamol 162.5 mg",
+      "image": "images/uploads/extranac-suspensions.jpg",
+      "assignedDoctors": [],
+      "materialsCount": 1,
+      "status": "Active",
+      "categories": [
+        "ortho",
+        "paediatrics",
+        "general",
+        "Dental"
+      ]
+    },
+    {
       "name": "Linzotal 100/600",
       "molecule": "Linezolid 100 mg Syrup / Linezolid 600 mg Tablets",
       "image": "images/uploads/linzotal-100-600.jpg",

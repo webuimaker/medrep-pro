@@ -503,7 +503,7 @@
         "FERICOS-XT",
         "NeuroGlow-GB",
         "Rabital-L",
-        "Calcos 60K D3"
+        "Rabital DSR"
       ],
       "city": "Gaya ",
       "name": "Dr. Kusum Singh",
@@ -513,6 +513,28 @@
       "catalog": "Extra",
       "hospital": "Delha Gaya ",
       "specialty": "Gynaecology"
+    },
+    {
+      "products": [
+        "NeuroGlow-GB",
+        "Neurogrow Plus",
+        "Tripcos-D",
+        "Rabital DSR",
+        "Calcos-60K",
+        "CALCOS ACTIVE",
+        "Calcos-GOLD",
+        "Linzotal 100/600",
+        "Methisa",
+        "CALCOS-K27"
+      ],
+      "city": "Goh",
+      "name": "Dr. RamaNuj",
+      "qualification": "Gyne",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "ortho",
+      "hospital": "Goh Gaya ",
+      "specialty": "Orthopaedics"
     }
   ]
 }
