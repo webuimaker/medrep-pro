@@ -114,7 +114,7 @@
     {
       "name": "NeuroGlow-GB",
       "molecule": "Gabapentin 300 mg + Methylcobalamin 500 mcg Tablets",
-      "image": "images/uploads/neuroglow-gb.jpg",
+      "image": "/images/uploads/neuroglow-gb.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
       "status": "Active",
