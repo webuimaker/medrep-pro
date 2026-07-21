@@ -205,7 +205,7 @@
     {
       "name": "Calcos-GOLD",
       "molecule": "Calcium Citrate Malate 500 mg + Calcitriol 0.25 mcg + Vitamin K2-7 45 mcg + Omega-3 Fatty Acid 150 mg + Cyanocobalamin 750 mcg + Folic Acid 400 mcg + Boron 1.5 mg Soft Gelatin Capsules",
-      "image": "images/uploads/calcos-gold.jpg",
+      "image": "/images/uploads/calcos-gold.png",
       "assignedDoctors": [],
       "materialsCount": 1,
       "status": "Active",
