@@ -535,6 +535,31 @@
       "catalog": "ortho",
       "hospital": "Goh Gaya ",
       "specialty": "Orthopaedics"
+    },
+    {
+      "products": [
+        "COSLIV",
+        "Cosliv Capsules",
+        "RACTAL J",
+        "BronCos-LS",
+        "NeuroGlow-GB",
+        "CALCOS-K27",
+        "Drocos-MF",
+        "BILACOS",
+        "Rabital-L",
+        "Oflocos-MS",
+        "Etocos-TH",
+        "Bestocid-O",
+        "Calcos-60K"
+      ],
+      "city": "Sherghati",
+      "name": "Dr. Sanjay Kumar",
+      "qualification": "GP",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "general",
+      "hospital": "Sherghati",
+      "specialty": "General Physician"
     }
   ]
 }
