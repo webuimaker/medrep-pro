@@ -214,6 +214,21 @@
       ]
     },
     {
+      "id": "Diabetes-Cardio",
+      "title": "Diabetes & Cardio",
+      "color": "#DC2626",
+      "bg": "#FEF2F2",
+      "icon": "🩸",
+      "specialties": [],
+      "products": [
+        "COSRIDE M1/M2",
+        "DAPZIN-10",
+        "Rosucos Gold 20",
+        "Vosco",
+        "Artcos SL / Artcos"
+      ]
+    },
+    {
       "id": "Extra",
       "title": "Extra",
       "color": "#6B7280",
