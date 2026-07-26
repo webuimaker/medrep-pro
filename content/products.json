@@ -862,6 +862,13 @@
       "assignedDoctors": [
         "Dr. Kusum Singh"
       ]
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "COSKIT",
+      "molecule": "💊 Azithromycin 1 gm – Antibacterial 💊 Secnidazole 1 gm (2 Tablets) – Anti-protozoal & Anti-anaerobic 💊 Fluconazole 150 mg – Antifungal",
+      "image": "/images/uploads/coskit-1.jpg"
     }
   ]
 }
