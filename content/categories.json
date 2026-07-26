@@ -160,6 +160,34 @@
       ]
     },
     {
+      "id": "Gyne",
+      "title": "Gynaecology",
+      "color": "#D946A8",
+      "bg": "#FDF0FB",
+      "icon": "🤰",
+      "specialties": [
+        "Gynaecology"
+      ],
+      "products": [
+        "Cosclin Kit",
+        "cyclocos TX",
+        "Coskit",
+        "Pregcos 200",
+        "FERICOS-XT",
+        "Drocos-MF",
+        "Calcos-60K",
+        "Cosliv Capsules",
+        "COSLIV",
+        "CALCOS ACTIVE",
+        "Calcos-GOLD",
+        "NeuroGlow-GB",
+        "Rabital-L",
+        "Bestocid-O",
+        "BronCos-LS",
+        "Cefucos-CV"
+      ]
+    },
+    {
       "id": "Extra",
       "title": "Extra",
       "color": "#6B7280",
