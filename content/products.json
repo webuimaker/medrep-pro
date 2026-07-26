@@ -422,10 +422,12 @@
       ]
     },
     {
-      "name": "Extrnct",
-      "molecule": "Herbal Extract Tablets",
+      "name": "Cyclocos-TX",
+      "molecule": "Tranexamic Acid 500 mg, Mefenamic Acid 250 mg",
       "image": "images/uploads/general-extrnct.jpg",
-      "assignedDoctors": [],
+      "assignedDoctors": [
+        "Dr. Kusum Singh"
+      ],
       "materialsCount": 1,
       "status": "Active",
       "categories": [
