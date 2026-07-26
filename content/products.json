@@ -869,6 +869,16 @@
       "name": "COSKIT",
       "molecule": "💊 Azithromycin 1 gm – Antibacterial 💊 Secnidazole 1 gm (2 Tablets) – Anti-protozoal & Anti-anaerobic 💊 Fluconazole 150 mg – Antifungal",
       "image": "/images/uploads/coskit-1.jpg"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "PregCos  200",
+      "molecule": "Progesterone 200 mg Softgel Capsules",
+      "image": "/images/uploads/pregcos-100-200.jpg",
+      "assignedDoctors": [
+        "Dr. Kusum Singh"
+      ]
     }
   ]
 }
