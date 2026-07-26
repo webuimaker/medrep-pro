@@ -850,6 +850,16 @@
       "name": "OFLOCOS-OZ",
       "molecule": "Ofloxacin 200 mg, Ornidazole 500 mg",
       "image": "/images/uploads/oflocos-oz.jpg"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "Cosclin Kit",
+      "molecule": "Clindamycin 100 mg, Clotrimazole 100 mg",
+      "image": "/images/uploads/cosclin-kit-1.jpg",
+      "assignedDoctors": [
+        "Dr. Kusum Singh"
+      ]
     }
   ]
 }
