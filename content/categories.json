@@ -175,7 +175,7 @@
         "Cosclin Kit",
         "Cyclocos-TX",
         "COSKIT",
-        "Pregcos 200",
+        "PregCos  200",
         "FERICOS-XT",
         "Drocos-MF",
         "Calcos-60K",
@@ -188,6 +188,29 @@
         "Bestocid-O",
         "BronCos-LS",
         "Cefucos-CV"
+      ]
+    },
+    {
+      "id": "Syrup-Onti",
+      "title": "Syrup & Ointment",
+      "color": "#059669",
+      "bg": "#ECFDF5",
+      "icon": "🧴",
+      "specialties": [],
+      "products": [
+        "Calcos 60K D3"
+        "CYPROCOS",
+        "Extrazyme",
+        "Clobgm",
+        "Itchic",
+        "Otocs",
+        "Vitocos Gold",
+        "Lactoco",
+        "OFLOCOS-OZ",
+        "Oflocos",
+        "COSTUS Syrup",
+        "Rabital DSR",
+        "P-COLD"
       ]
     },
     {
