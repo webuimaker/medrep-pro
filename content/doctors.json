@@ -561,6 +561,20 @@
       "catalog": "general",
       "hospital": "Sherghati",
       "specialty": "General Physician"
+    },
+    {
+      "products": [
+        "Calcos-60K",
+        "BILACOS"
+      ],
+      "city": "Chakand",
+      "name": "Dr. Pramod Kumar",
+      "qualification": "RPM",
+      "state": "Gaya",
+      "status": "Active",
+      "catalog": "ortho",
+      "hospital": "Chakand",
+      "specialty": "Orthopaedics"
     }
   ]
 }
