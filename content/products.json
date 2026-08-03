@@ -28,7 +28,7 @@
       "image": "images/uploads/colact.jpg",
       "assignedDoctors": [],
       "materialsCount": 1,
-      "status": "Active",
+      "status": "Inactive",
       "categories": [
         "general"
       ]
