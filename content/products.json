@@ -879,6 +879,13 @@
       "assignedDoctors": [
         "Dr. Kusum Singh"
       ]
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "COCEF-AZ-LB",
+      "molecule": "Cefixime 200 mg + Azithromycin 250 mg + Lactic Acid Bacillus 2.5 Billion Spores Tablets",
+      "image": "/images/uploads/cocef-az-lb.png"
     }
   ]
 }
