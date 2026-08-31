@@ -886,6 +886,16 @@
       "name": "COCEF-AZ-LB",
       "molecule": "Cefixime 200 mg + Azithromycin 250 mg + Lactic Acid Bacillus 2.5 Billion Spores Tablets",
       "image": "/images/uploads/cocef-az-lb.png"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "image": "/images/uploads/neuroglow-Plus-tablet.jpg",
+      "name": "NeuroGlow-Plus Tablets",
+      "molecule": "Pregabalin 75 mg + Nortriptyline 10 mg + Methylcobalamin 1500 mg",
+      "assignedDoctors": [
+        "Dr. M.R. Astraf"
+      ]
     }
   ]
 }
