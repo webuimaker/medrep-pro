@@ -892,10 +892,7 @@
       "status": "Active",
       "image": "/images/uploads/neuroglow-Plus-tablet.jpg",
       "name": "NeuroGlow-Plus Tablets",
-      "molecule": "Pregabalin 75 mg + Nortriptyline 10 mg + Methylcobalamin 1500 mg",
-      "assignedDoctors": [
-        "Dr. M.R. Astraf"
-      ]
+      "molecule": "Pregabalin 75 mg + Nortriptyline 10 mg + Methylcobalamin 1500 mg"      
     }
   ]
 }
