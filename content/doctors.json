@@ -609,49 +609,28 @@
       "hospital": "K.B. Memorial Child Hospital, Saheed Road, Near Paradise Cinema Hall, Gaya - 823001, Bihar",
       "specialty": "Paediatrics"
     },
-    {      
+    {
       "products": [
-        "Itchic",
-        "Clobgm",
-        "Otocs",
-        "Orthocos",
-        "COSTUS Syrup",
-        "Extranac",
         "BILACOS",
-        "RACTAL J",
-        "Vitocos Gold",
+        "CALCOS ACTIVE",
+        "COSRIDE M1/M2",
+        "Calcos-60K",
+        "Drocos-MF",
         "NeuroGlow-GB",
-        "Calcos 60K D3"
+        "FexCos-M",
+        "Lactoco-L",
+        "Rifacos 200/400",
+        "Esocos-DSR",
+        "COLACT"
       ],
-      "clinic": "Khizarsarai, Gaya, Bihar",
+      "city": "Gaya",
+      "name": "Dr. Anil Kr.",
+      "qualification": "MBBS, Physician",
+      "state": "Bihar",
       "status": "Active",
-      "name": "Dr. Anil Kumar",
-      "qualification": "MBBS",
-      "specialty": "General Physician",
-      "hospital": "Khizarsarai",
-      "city": "Khizarsarai",
-      "state": "Bihar"
-    },
-    {      
-      "products": [
-        "Cos4G",
-        "BILACOS",
-        "NeuroGlow-GB",
-        "P-COLD",
-        "Calcos 60K D3",
-        "Neurogrow Plus",
-        "Nemutal Plus",
-        "Otocs",
-        "RACTAL J"
-      ],
-      "clinic": "Khizarsarai, Gaya, Bihar",
-      "status": "Active",
-      "name": "Dr Shushil Kr",
-      "qualification": "RPM",
-      "specialty": "General Physician",
-      "hospital": "Self",
-      "city": "Khizarsarai",
-      "state": "Bihar"
+      "catalog": "general",
+      "hospital": "Khizarsarai, Gaya",
+      "specialty": "General Physician"
     }
   ]
 }
