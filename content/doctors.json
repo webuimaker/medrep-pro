@@ -631,6 +631,27 @@
       "catalog": "general",
       "hospital": "Khizarsarai, Gaya",
       "specialty": "General Physician"
+    },
+    {
+      "products": [
+        "Cos4G",
+        "BILACOS",
+        "NeuroGlow-GB",
+        "P-COLD",
+        "Calcos 60K D3",
+        "Neurogrow Plus",
+        "Nemutal Plus",
+        "Otocs",
+        "RACTAL J"
+      ],
+      "city": "Gaya",
+      "name": "Dr. Shushil Kr.",
+      "qualification": "MBBS, Physician",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "general",
+      "hospital": "Khizarsarai, Gaya",
+      "specialty": "General Physician"
     }
   ]
 }
