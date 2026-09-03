@@ -609,14 +609,7 @@
       "hospital": "K.B. Memorial Child Hospital, Saheed Road, Near Paradise Cinema Hall, Gaya - 823001, Bihar",
       "specialty": "Paediatrics"
     },
-    {
-      "status": "Active",
-      "name": "Dr. Upendar Pd",
-      "qualification": "MBS",
-      "specialty": "General Physician",
-      "hospital": "Khizarsarai",
-      "city": "Khizarsarai",
-      "state": "Bihar",
+    {      
       "products": [
         "Itchic",
         "Clobgm",
@@ -629,16 +622,17 @@
         "Vitocos Gold",
         "NeuroGlow-GB",
         "Calcos 60K D3"
-      ]
-    },
-    {
+      ],
+      "clinic": "Khizarsarai, Gaya, Bihar",
       "status": "Active",
-      "name": "Dr Shushil Kr",
-      "qualification": "RPM",
+      "name": "Dr. Upendar Pd",
+      "qualification": "MBS",
       "specialty": "General Physician",
-      "hospital": "Self",
+      "hospital": "Khizarsarai",
       "city": "Khizarsarai",
-      "state": "Bihar",
+      "state": "Bihar"
+    },
+    {      
       "products": [
         "Cos4G",
         "BILACOS",
@@ -649,7 +643,15 @@
         "Nemutal Plus",
         "Otocs",
         "RACTAL J"
-      ]
+      ],
+      "clinic": "Khizarsarai, Gaya, Bihar",
+      "status": "Active",
+      "name": "Dr Shushil Kr",
+      "qualification": "RPM",
+      "specialty": "General Physician",
+      "hospital": "Self",
+      "city": "Khizarsarai",
+      "state": "Bihar"
     }
   ]
 }
