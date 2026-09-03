@@ -610,13 +610,6 @@
       "specialty": "Paediatrics"
     },
     {
-      "status": "Active",
-      "name": "Dr. Upendar Pd",
-      "qualification": "MBS",
-      "specialty": "General Physician",
-      "hospital": "Khizarsarai",
-      "city": "Khizarsarai",
-      "state": "Bihar",
       "products": [
         "Itchic",
         "Clobgm",
@@ -629,16 +622,18 @@
         "Vitocos Gold",
         "NeuroGlow-GB",
         "Calcos 60K D3"
-      ]
+      ],
+      "clinic": "Khizarsarai",
+      "city": "Khizarsarai",
+      "name": "Dr. Upendar Pd",
+      "qualification": "MBS",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "general",
+      "hospital": "Khizarsarai",
+      "specialty": "General Physician"
     },
     {
-      "status": "Active",
-      "name": "Dr Shushil Kr",
-      "qualification": "RPM",
-      "specialty": "General Physician",
-      "hospital": "Self",
-      "city": "Khizarsarai",
-      "state": "Bihar",
       "products": [
         "Cos4G",
         "BILACOS",
@@ -649,7 +644,15 @@
         "Nemutal Plus",
         "Otocs",
         "RACTAL J"
-      ]
+      ],
+      "city": "Khizarsarai",
+      "name": "Dr Shushil Kr",
+      "qualification": "RPM",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "general",
+      "hospital": "Self",
+      "specialty": "General Physician"
     }
   ]
 }
