@@ -652,6 +652,20 @@
       "catalog": "general",
       "hospital": "Khizarsarai, Gaya",
       "specialty": "General Physician"
+    },
+    {
+      "products": [
+        "NeuroGlow-GB",
+        "Calcos 60K D3"
+      ],
+      "city": "Makhdumpur",
+      "name": "Dr. Ranjeet Kr.",
+      "qualification": "Orthopedic & Trauma Center",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "general",
+      "hospital": "Makhdumpur",
+      "specialty": "General Physician"
     }
   ]
 }
