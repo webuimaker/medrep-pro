@@ -900,6 +900,13 @@
       "molecule": "Pregabalin 75 mg + Nortriptyline 10 mg + Methylcobalamin 1500 mg",
       "name": "NeuroGlow-Plus-Tablet",
       "image": "/images/uploads/neuroglow-Plus-tablet.jpg"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "name": "SYMODENT",
+      "image": "/images/uploads/chatgpt-image-sep-13-2026-07_35_14-pm.png",
+      "molecule": "Potassium Nitrate 5% w/w + Sodium Monofluorophosphate 0.7% w/w"
     }
   ]
 }
