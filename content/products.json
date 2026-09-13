@@ -588,8 +588,8 @@
         "paediatrics",
         "Dental"
       ],
-      "molecule": "Amoxycillin + Clavulanic Acid Injections/Tablets/Dry Syrup with Lactic Acid Bacillus",
-      "image": "/images/uploads/cosclav.jpg"
+      "molecule": "Amoxycillin + Clavulanic Acid Tablets/Dry Syrup",
+      "image": "/images/uploads/chatgpt-image-sep-13-2026-08_09_05-pm.png"
     },
     {
       "materialsCount": 0,
@@ -907,6 +907,13 @@
       "name": "SYMODENT",
       "image": "/images/uploads/chatgpt-image-sep-13-2026-07_35_14-pm.png",
       "molecule": "Potassium Nitrate 5% w/w + Sodium Monofluorophosphate 0.7% w/w"
+    },
+    {
+      "materialsCount": 0,
+      "status": "Active",
+      "molecule": "Amoxycillin + Clavulanic Dry Syrup",
+      "name": "Cosclav Dry Syrup",
+      "image": "/images/uploads/chatgpt-image-sep-13-2026-08_14_15-pm.png"
     }
   ]
 }
