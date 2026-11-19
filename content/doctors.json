@@ -604,6 +604,26 @@
     },
     {
       "products": [
+        "NeuroGlow-GB",
+        "Extranac",
+        "Extranac Suspensions",
+        "Extrnct",
+        "Tripcos-D",
+        "Kanil-DT",
+        "Rabital-L",
+        "Bestocid-O"
+      ],
+      "city": "Goh",
+      "name": "Dr. JK Sharma",
+      "qualification": "Orthopedic",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "ortho",
+      "hospital": "Goh Gaya ",
+      "specialty": "Orthopaedics"
+    },
+    {
+      "products": [
         "COSLIV",
         "Cosliv Capsules",
         "RACTAL J",
