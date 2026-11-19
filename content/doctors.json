@@ -547,6 +547,45 @@
     },
     {
       "products": [
+        "Extranac",
+        "Extranac Suspensions",
+        "CoCef CV",
+        "Bestocid-O",
+        "Etocos-TH",
+        "Vitocos Gold",
+        "CoCef CV",
+        "VTOCOS-Z Syrup"
+      ],
+      "city": "Goh",
+      "name": "Dr. RamaNuj - Rajesh",
+      "qualification": "Orthopedic",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "ortho",
+      "hospital": "Goh Gaya ",
+      "specialty": "Orthopaedics"
+    },
+    {
+      "products": [
+        "AZICOS 250 / 500",
+        "COSLIV",
+        "BronCos-LS",
+        "Oflocos-MS",
+        "RACTAL J",
+        "Extranac Suspensions",
+        "P-COLD"
+      ],
+      "city": "Goh",
+      "name": "Dr. Manoj Kaushik",
+      "qualification": "Orthopedic",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "ortho",
+      "hospital": "Goh Gaya ",
+      "specialty": "Orthopaedics"
+    },
+    {
+      "products": [
         "COSLIV",
         "Cosliv Capsules",
         "RACTAL J",
