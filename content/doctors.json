@@ -586,6 +586,24 @@
     },
     {
       "products": [
+        "NeuroGlow-GB",
+        "Extranac Suspensions",
+        "Extranac",
+        "Orthocos",
+        "Etocos-TH",
+        "CALCOS ACTIVE"
+      ],
+      "city": "Goh",
+      "name": "Dr. R Kumar",
+      "qualification": "Orthopedic",
+      "state": "Bihar",
+      "status": "Active",
+      "catalog": "ortho",
+      "hospital": "Goh Gaya ",
+      "specialty": "Orthopaedics"
+    },
+    {
+      "products": [
         "COSLIV",
         "Cosliv Capsules",
         "RACTAL J",
